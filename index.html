@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kreative Co. 2021</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/Visuals/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Hey bb I love you so much you are my favorite BB in the whole world.
+        Moth, may potat brian watch over you, you my sweet pickle goblin. 🖤🌚🌝🖤
+        -->
+    <header>
+        <a href="/index.html" class="homeLink">The Kreative Co.</a>
+    </header>
+
+
+    <section class="hero">
+        
+        <!-- CHILD 1 --> 
+        <div id="heroImage">
+         <img src="/Visuals/Arch333.png">
+        </div>
+
+        <!-- CHILD 2 --> 
+        <div id="desc">
+            <p class="typewriter" id="descChangingText">hover on the hexagons below to find what you desire</p>
+        </div>
+
+
+       <!-- CHILD 3 --> 
+        <div id="descHexagons">
+            <div class="hex" id="hexGraphics">
+                <a href="/graphics.html"><img src="Visuals/Hex777.svg"></a>
+            </div>
+            <div class="hex" id="hexPhotos">
+                <a href="/photos.html"><img src="Visuals/Hex111.png"></a>
+            </div>
+            <div class="hex" id="hexCode">
+                <a href="/code.html"><img src="Visuals/Hex111.png"></a>
+            </div>
+            <div class="hex" id="hexProjects">
+                <a href="/projects.html"><img src="Visuals/Hex111.png"></a>
+            </div>
+            <div class="hex" id="hexResume">
+                <a href="/resume.html"><img src="Visuals/Hex111.png"></a>
+            </div>
+            <div class="hex" id="hexContact">
+                <a href="/contact.html"><img src="Visuals/Hex111.png"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+       
+            <img class="copyright" src="Visuals/Copyright222.png">
+        
+        <ul>
+            <li class="footerLink"><a href="/about.html">ABOUT</a></li>
+            <li class="footerLink"><a href="/community.html">COMMUNITY</a></li>
+            <li class="footerLink"><a href="/contact.html">CONTACT</a></li>
+            <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/" target="_blank">LINKEDIN</a></li>
+            <li class="footerLink"><a href="/resume.html">RESUME</a></li>
+            <li class="footerLink"><a href="http://wisteriaandivy.com/" target="_blank">SHOP</a></li>
+            
+        </ul>
+    </footer>
+
+    <script>
+        const descText = document.getElementById("descChangingText");
+        const hexGraphics = document.getElementById("hexGraphics");
+        const hexPhotos = document.getElementById("hexPhotos");
+        const hexCode = document.getElementById("hexCode");
+        const hexProjects = document.getElementById("hexProjects");
+        const hexResume = document.getElementById("hexResume");
+        const hexContact = document.getElementById("hexContact");
+
+
+        hexGraphics.onmouseover = function () {
+            descText.innerHTML = "graphics";
+            descText.style.marginRight = "4%";
+            descText.style.marginLeft = "14%";
+            descText.style.fontSize = "5em";
+        };
+
+        hexPhotos.onmouseover = function () {
+            descText.innerHTML = "photography";
+            descText.style.marginRight = "4%";
+            descText.style.marginLeft = "6%";
+            descText.style.fontSize = "5em";
+        };
+
+        hexCode.onmouseover = function () {
+            descText.innerHTML = "code";
+            descText.style.marginRight = "4%";
+            descText.style.marginLeft = "21%";
+            descText.style.fontSize = "5em";
+        };
+
+        hexProjects.onmouseover = function () {
+            descText.innerHTML = "projects";
+            descText.style.marginRight = "4%";
+            descText.style.marginLeft = "15%";
+            descText.style.fontSize = "5em";
+        };
+
+        hexResume.onmouseover = function () {
+            descText.innerHTML = "resume";
+            descText.style.marginRight = "4%";
+            descText.style.marginLeft = "16%";
+            descText.style.fontSize = "5em";
+        };
+
+        hexContact.onmouseover = function () {
+            descText.innerHTML = "contact";
+            descText.style.marginRight = "4%";
+            descText.style.marginLeft = "16%";
+            descText.style.fontSize = "5em";
+        };
+    </script>
+
+</body>
+</html>

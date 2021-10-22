@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    background-color: #DCAC93;
+}
+
+/* NAV */
+
+header {
+    text-align: center;
+}
+
+.homeLink{
+    display: flex;
+    font-family: Lydian;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* HERO */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero div {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+#heroImage{
+    /* position: fixed; */
+    width: 87vw;
+    margin-left: 4%;
+    padding-bottom: 4%;
+    padding-top: 3%;
+    /* transform: translate(-50%, -50%); */
+}
+
+#descChangingText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-family: Mondwest-Regular !important;
+    font-size: 2.5em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 24%;
+    padding-left: 60%;
+    margin-bottom: 2% !important;
+}
+
+/* hexagons */
+#descHexagons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25%;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.hex{
+    width: 6vw;
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    transition: transform 0.5s;
+}
+
+.hex:hover {
+    cursor: pointer;
+    transform: scale(1.5, 1.5);
+}
+
+/* FOOTER */
+footer {
+    background-color: #C97D54;
+    display: block;
+    padding: 3%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.copyright{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+.footerLink{
+    margin: auto;
+    transition: all .2s ease-in;
+}
+
+.footerLink a{
+    text-decoration: none !important;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.footerLink a:hover{
+    color: #000000;
+}

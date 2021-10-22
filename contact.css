@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body{
+    background-color: #DCAC93;
+}
+
+/* HEADER */
+.homeLink{
+    display: inline-flex;
+    font-family: Lydian;
+    justify-content: left;
+    align-items: center;
+    justify-items: left;
+    text-align: left;
+    font-size: 35px;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none !important;
+    padding: 8px 0px 8px 0px;
+}
+
+/* LIST OF NAV LINKS IN THE HEADER */
+.headerLink{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 20px 0% 0% 1%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.headerLink:hover{
+    color: #ffffff;
+    display: inline-flex;
+    transition: .2s ease-in;
+}
+
+.navLinkContainer{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* MAIN */
+.contactContainer{
+    height: 85vh;
+    width: 70vw;
+    margin-top: 2%;
+    margin-left: 5%;
+    overflow: scroll;
+}
+
+.contactHead{
+    font-family: Pilowlava;
+    font-size: 7em;
+    color: #fff;
+}
+
+.contactBody{
+    font-family: Mondwest;
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    color: #fff;
+}
+
+.contactBody a{
+    color: #C97D54;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.contactBody a:hover{
+    color: #000000;
+}
+
+/* FOR THE PHP FORM */
+/* Style inputs, select elements and textareas */
+/* input[type=text], select, textarea{
+    width: 100%;
+    font-family: Helvetica;
+    color: #8ea318;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: both;
+  } */
+  
+  /* Style the label to display next to the inputs */
+  /* label {
+    padding: 12px 12px 12px 0;
+    font-family: Helvetica;
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+  }
+   */
+  /* Style the submit button */
+  /* input[type=submit] {
+    font-family: Helvetica;
+    background-color: #C97D54;
+    color: #ffffff;
+    padding: 12px 45px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 1%;
+  } */
+  
+  /* Style the container */
+  /* .container {
+    width: 40vw;
+    border: 2px solid #C97D54; */
+    /* background-color: #f2f2f2; */
+    /* padding: 20px;
+    margin-top: 4%;
+  } */
+  
+  /* Floating column for labels: 25% width */
+  /* .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  } */
+  
+  /* Floating column for inputs: 75% width */
+  /* .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  } */
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   */
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+   */
+
+/* FOOTER BELOW */
+footer {
+    background-color: #C97D54;
+    display: block;
+    padding: 3%;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.copyright{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+.footerLink{
+    margin: auto;
+    transition: all .2s ease-in;
+}
+
+.footerLink a{
+    text-decoration: none !important;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.footerLink a:hover{
+    color: #000000;
+}

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body{
+    background-color: #DCAC93;
+}
+
+/* HEADER */
+.homeLink{
+    display: inline-flex;
+    font-family: Lydian;
+    justify-content: left;
+    align-items: center;
+    justify-items: left;
+    text-align: left;
+    font-size: 35px;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none !important;
+    padding: 8px 0px 8px 0px;
+}
+
+/* LIST OF NAV LINKS IN THE HEADER */
+.headerLink{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 20px 0% 0% 1%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.headerLink:hover{
+    color: #ffffff;
+    display: inline-flex;
+    transition: .2s ease-in;
+}
+
+.navLinkContainer{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* MAIN CONTENT BELOW */
+.aboutMain{
+    width: 100vw;
+    height: 100vh;
+    background-color: #DCAC93 !important;
+}
+
+.aboutContainer{
+    height: 85vh;
+    width: 70vw;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding-right: 20VW;
+    overflow: scroll;
+}
+
+.aboutHeading{
+    font-family: Pilowlava;
+    font-size: 7em;
+    color: #fff;
+}
+
+.aboutSubhead{
+    font-family: Mondwest;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.aboutKN{
+    font-family: Mondwest;
+    font-size: 60px;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.aboutBody{
+    font-family: Mondwest;
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    color: #fff;
+}
+
+.aboutBody a{
+    color: #C97D54;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.aboutBody a:hover{
+    color: #000000;
+}
+
+.thankYou{
+    font-family: Pilowlava;
+    font-size: 7em;
+    color: #fff;
+    margin-top: 2%;
+}
+
+.thankYouHeart{
+    display: inline-flex;
+    width: 75px;
+}
+
+/* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
+.aboutContainer::-webkit-scrollbar{
+    width: 10px;  
+     height: 0px;
+}
+
+.aboutContainer::-webkit-scrollbar-track:vertical {
+    background: #f1f1f1;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
+  
+  .aboutContainer::-webkit-scrollbar-thumb:vertical {
+    background: #a396ff;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
+
+  .aboutContainer::-webkit-scrollbar-track-piece:vertical{
+      background: #f1f1f1;
+      border-radius: 50px;
+      padding-bottom: 0%;
+}
+
+  .aboutContainer::-webkit-scrollbar-corner:vertical{
+      display: none;
+      padding-bottom: 0%;
+}
+  
+  .aboutContainer::-webkit-scrollbar-track:horizontal {
+    display: none;
+    padding: 0%;
+}
+  
+  .aboutContainer::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+    padding: 0%;
+}
+
+  .aboutContainer::-webkit-scrollbar-track-piece:horizontal{
+    display: none;
+    padding: 0%;
+}
+
+/* FOOTER  */
+footer {
+    background-color: #C97D54;
+    display: block;
+    padding: 3%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.copyright{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+.footerLink{
+    margin: auto;
+    transition: all .2s ease-in;
+}
+
+.footerLink a{
+    text-decoration: none !important;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.footerLink a:hover{
+    color: #000000;
+}

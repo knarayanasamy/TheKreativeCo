@@ -1,0 +1,23 @@
+  @font-face {
+    font-family: 'Lydian';
+    src: url('/Fonts/LydianRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'LydianBold';
+    src: url('/Fonts/LydianBold.otf') format('otf');
+  }
+
+  @font-face {
+    font-family: 'Pilowlava';
+    src: url('/Fonts/Pilowlava.otf') format('otf');
+  }
+
+  @font-face {
+    font-family: 'Mondwest-Regular';
+    src: url('Fonts/Mondwest-Regular.eot');
+    src: url('Fonts/Mondwest-Regular.eot') format('embedded-opentype'),
+         url('Fonts/Mondwest-Regular.woff2') format('woff2'),
+         url('Fonts/Mondwest-Regular.woff') format('woff'),
+         url('Fonts/Mondwest-Regular.ttf') format('truetype');
+}

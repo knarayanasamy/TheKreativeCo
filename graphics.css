@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* BODY BELOW */
+body{
+    background-color: #D5D3BE;
+}
+
+/* HEADER BELOW */
+.homeLink{
+    display: inline-flex;
+    font-family: Lydian;
+    justify-content: left;
+    align-items: center;
+    justify-items: left;
+    text-align: left;
+    font-size: 35px;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none !important;
+    padding: 8px 0px 8px 0px;
+}
+
+/* LIST OF NAV LINKS IN THE HEADER */
+.headerLink{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 20px 0% 0% 1%;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.headerLink:hover{
+    color: #ffffff;
+    display: inline-flex;
+    transition: .2s ease-in;
+}
+
+.navLinkContainer{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* MAIN CONTENT BELOW */
+.graphicsMain{
+    width: 100vw;
+    height: 100vh;
+    background-color: #D5D3BE !important;
+}
+
+/* DIRECTIONS TO NAVIGATE THE PAGE WITH LESS CONFUSION */
+.graphicDirections{
+    font-family: Mondwest;
+    font-size: 2em;
+    letter-spacing: 0.03em;
+    margin-top: 2.3%;
+    color: #266359;
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2000vw);
+    }
+}
+  
+.graphicDirections span {
+    animation: moveLeft 569s infinite;
+    white-space: nowrap;
+    display: block;
+    /* position: relative; */
+}
+
+.graphicsContainer{
+    height: 85vh;
+    width: 90vw;
+    margin-top: 2%;
+    margin-left: 5%;
+    overflow: scroll;
+}
+
+.graphicsContainer p{
+    font-family: Mondwest;
+    font-size: 5.5em;
+    line-height: 150%;
+}
+
+#content{
+    transition: 0.2s;
+}
+
+#content:hover{
+    color: #266359;
+    cursor: pointer;
+}
+
+#content:active{
+    color: #266359;
+}
+
+.panel{
+    display: none;
+    height: 50vh;
+    gap: 2%;
+    overflow: scroll;
+}
+
+/* MODAL STYLING */
+#smallImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #smallImg:hover {opacity: 0.7;}
+  
+  
+  #smallImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #smallImg2:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        margin-bottom: 200px;
+  }
+
+  /* The Close Button */
+  .close {
+        font-family: Mondwest;
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+  }
+
+
+
+/* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
+.graphicsContainer::-webkit-scrollbar{
+    width: 10px;  
+     height: 0px;
+}
+
+.graphicsContainer::-webkit-scrollbar-track:vertical {
+    background: #f1f1f1;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
+  
+  .graphicsContainer::-webkit-scrollbar-thumb:vertical {
+    background: #a396ff;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
+
+  .graphicsContainer::-webkit-scrollbar-track-piece:vertical{
+      background: #f1f1f1;
+      border-radius: 50px;
+      padding-bottom: 0%;
+}
+
+  .graphicsContainer::-webkit-scrollbar-corner:vertical{
+      display: none;
+      padding-bottom: 0%;
+}
+  
+  .graphicsContainer::-webkit-scrollbar-track:horizontal {
+    display: none;
+    padding: 0%;
+}
+  
+  .graphicsContainer::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+    padding: 0%;
+}
+
+  .graphicsContainer::-webkit-scrollbar-track-piece:horizontal{
+    display: none;
+    padding: 0%;
+}
+
+
+/* FOOTER BELOW */
+footer {
+    background-color: #266359;
+    display: block;
+    padding: 3%;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.copyright{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+.footerLink{
+    margin: auto;
+    transition: all .2s ease-in;
+}
+
+.footerLink a{
+    text-decoration: none !important;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.footerLink a:hover{
+    color: #000000;
+}
