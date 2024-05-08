@@ -15,7 +15,7 @@ body{
 /* HEADER */
 .homeLink{
     display: inline-flex;
-    font-family: Lydian;
+    font-family: 'Lydian';
     justify-content: left;
     align-items: center;
     justify-items: left;
@@ -37,13 +37,28 @@ body{
     font-family: Helvetica;
     color: #000000;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.05em;
     text-decoration: none !important;
     align-items: center;
     margin: 20px 0% 0% 1%;
     cursor: pointer;
     transition: all .2s ease-in;
+}
+
+.currentLink{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    color: #9D9CC4 !important;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 20px 0% 0% 1%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
 }
 
 .headerLink:hover{
@@ -55,6 +70,29 @@ body{
 .navLinkContainer{
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.inquire{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 15px 0% 0% 1%;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    border: solid 1px;
+    padding: 3px 5px 3px 5px;
+    background: #CCFF00;
+    color: #000000;
+}
+
+.inquire:hover{
+    background:honeydew;
+    color:hotpink;
 }
 
 /* MAIN CONTENT BELOW */
@@ -75,12 +113,12 @@ body{
 
 .resumeHeading{
     font-family: Pilowlava;
-    font-size: 4em;
+    font-size: 3.5vw;
 }
 
 .resumeSubhead{
-    font-family: Mondwest;
-    font-size: 35px;
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 2vw;
     letter-spacing: 0.02em;
     color: #000000;
     margin: 4% 0% 0% 0%;
@@ -88,7 +126,7 @@ body{
 
 .job{
     font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.8vw;
     font-weight: 400;
     margin: 1.5% 0% 1% 0%;
     letter-spacing: 0.02em;
@@ -96,8 +134,8 @@ body{
 }
 
 .job p{
-    font-family: Mondwest;
-    font-size: 20px;
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 1.1vw;
     letter-spacing: 0.02em;
     line-height: 130%;
     color: #5d58a5;
@@ -110,6 +148,26 @@ body{
 
 .job.skills p{
     margin: 1% 0% 1% 0%;
+}
+
+.job.skills.container {
+    display: flex;
+    width: 450px;
+}
+
+.flex-child {
+    flex: 1;
+    border: none;
+    padding: none;
+    margin: none;
+}  
+
+.flex-child.line{
+    text-align: center;
+}
+
+.flex-child.years{
+    text-align: right;
 }
 
 /* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
@@ -184,7 +242,7 @@ footer ul{
     text-decoration: none !important;
     color: #ffffff;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.05em;
     text-decoration: none;
     text-align: center;

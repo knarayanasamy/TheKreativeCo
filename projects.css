@@ -16,7 +16,7 @@ body{
 /* HEADER BELOW */
 .homeLink{
     display: inline-flex;
-    font-family: Lydian;
+    font-family: 'Lydian';
     justify-content: left;
     align-items: center;
     justify-items: left;
@@ -38,13 +38,28 @@ body{
     font-family: Helvetica;
     color: #000000;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.05em;
     text-decoration: none !important;
     align-items: center;
     margin: 20px 0% 0% 1%;
     cursor: pointer;
     transition: all .2s ease-in;
+}
+
+.currentLink{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    color: #D3AD27 !important;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 20px 0% 0% 1%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
 }
 
 .headerLink:hover{
@@ -58,6 +73,29 @@ body{
     margin-right: 2%;
 }
 
+.inquire{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 15px 0% 0% 1%;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    border: solid 1px;
+    padding: 3px 5px 3px 5px;
+    background: #CCFF00;
+    color: #000000;
+}
+
+.inquire:hover{
+    background:honeydew;
+    color:hotpink;
+}
+
 /* MAIN CONTENT BELOW */
 .projectsMain{
     width: 100vw;
@@ -67,7 +105,7 @@ body{
 
 /* DIRECTIONS TO NAVIGATE THE PAGE WITH LESS CONFUSION */
 .projectsDirections{
-    font-family: Mondwest;
+    font-family: 'Mondwest-Regular' !important;
     font-size: 2em;
     letter-spacing: 0.03em;
     margin-top: 2.3%;
@@ -103,7 +141,7 @@ body{
 }
 
 .projectsContainer p{
-    font-family: Mondwest;
+    font-family: 'Mondwest-Regular' !important;
     font-size: 5.5em;
     line-height: 150%;
 }
@@ -130,6 +168,7 @@ body{
 
 /* MODAL STYLING */
 #smallImg {
+    height: 50vh;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -145,49 +184,50 @@ body{
   }
   
   #smallImg2:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        margin-bottom: 200px;
-  }
 
-  /* The Close Button */
-  .close {
-        font-family: Mondwest;
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 30px;
-        font-weight: bold;
-        transition: 0.3s;
-  }
+  /* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
+  .projectsContainer::-webkit-scrollbar{
+    width: 10px;  
+     height: 0px;
+}
+
+.projectsContainer::-webkit-scrollbar-track:vertical {
+    background: #f1f1f1;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
   
-  .close:hover,
-  .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-  }
+  .projectsContainer::-webkit-scrollbar-thumb:vertical {
+    background: #a396ff;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
+
+  .projectsContainer::-webkit-scrollbar-track-piece:vertical{
+      background: #f1f1f1;
+      border-radius: 50px;
+      padding-bottom: 0%;
+}
+
+  .projectsContainer::-webkit-scrollbar-corner:vertical{
+      display: none;
+      padding-bottom: 0%;
+}
+  
+  .projectsContainer::-webkit-scrollbar-track:horizontal {
+    display: none;
+    padding: 0%;
+}
+  
+  .projectsContainer::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+    padding: 0%;
+}
+
+  .projectsContainer::-webkit-scrollbar-track-piece:horizontal{
+    display: none;
+    padding: 0%;
+}
 
 /* FOOTER BELOW */
 footer {
@@ -217,7 +257,7 @@ footer ul{
     text-decoration: none !important;
     color: #ffffff;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.05em;
     text-decoration: none;
     text-align: center;

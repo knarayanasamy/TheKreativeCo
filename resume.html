@@ -5,20 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/resume.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="icon" href="/Visuals/favicon.ico" type="image/x-icon">
     
     <title>Resume</title>
 </head>
 <body>
     <header>
         <div class="navLinkContainer">
-            <a class="homeLink" href="/index.html">The Kreative Co.</a>
-            <a class="headerLink" href="/community.html">COMMUNITY</a>
-            <a class="headerLink" href="/contact.html">CONTACT</a>
-            <a class="headerLink" href="/about.html">ABOUT</a>
-            <a class="headerLink" href="/projects.html">PROJECTS</a>
-            <a class="headerLink" href="/code.html">CODE</a>
-            <a class="headerLink" href="/photos.html">PHOTOGRAPHY</a>
-            <a class="headerLink" href="/graphics.html">DESIGN</a>
+            <a class="homeLink" href="/index">The Kreative Co.</a>
+
+            <!-- MOBILE MENU -->
+            <ul class="menu">
+                <li class="list"><a href="#"><img class="mobileMenu" src="/Visuals/MENU999.png"></a>
+                   <ul class="items">
+                    <li class="mobileContact"><a href="/contact">INQUIRE</a></li>
+                      <li><a href="/graphics">DESIGN</a></li>
+                      <!-- <li><a href="/productDesign">PRODUCT</a></li> -->
+                      <li><a href="/photos">PHOTOGRAPHY</a></li>
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/community">COMMUNITY</a></li>
+                   </ul>
+                </li>
+             </ul>
+
+            <!-- DESKTOP MENU -->
+            <a class="inquire" href="/contact">INQUIRE</a>
+            <a class="headerLink" href="/community">COMMUNITY</a>
+            <a class="headerLink" href="/about">ABOUT</a>
+            <!-- <a class="currentLink" href="/resume">RESUME</a> -->
+            <a class="headerLink" href="/projects">PROJECTS</a>
+            <!-- <a class="headerLink" href="/code">CODE</a> -->
+            <a class="headerLink" href="/photos">PHOTOGRAPHY</a>
+            <!-- <a class="headerLink" href="/productDesign">PRODUCT</a> -->
+            <a class="headerLink" href="/graphics">DESIGN</a>
         </div>
     </header>
 
@@ -26,9 +48,60 @@
         <div class="resumeContainer">
             <p class="resumeHeading">HERE'S EVERYTHING!</p>
             <p class="resumeSubhead">EXPERIENCE</p>
+                
+            <div class="job santulanCreative">
+                <p>SANTULAN CREATIVE</p>
+                <p class="date">January 2023 – Present</p>
+                <p>Brand Lead + Product Designer</p>
+                <ul>
+                    <li>Implemented & continue to manage Santulan Creative’s internal brand system including style & branding guides, branding frameworks, handmade templates, mockups, and content guidelines, that range from the Adobe Creative Suite to Klaviyo to various social media platforms to increase content created by 75%, enhance engagement, bolster brand recognition, drive user traffic to our website, and facilitate community conversions.</li>
+                    <li>Created Figma prototypes for an all-new website — designed by me through Squarespace! All things brand & visual either go through me or are created by me with collaboration & input from the team.</li>
+                    <li>Conducted a comprehensive brand case study for Santulan Creative through user-research, given metrics, and hands-on collaboration with team. Re-designed Santulan’s entire brand architecture with consideration towards seamless future scalability in any and every sense!</li>
+                    <li>Re-designed Santulan’s entire brand architecture with consideration towards seamless future scalability in any and every sense!</li>
+                    <li>Directed evergreen & seasonal content strategy efforts by digital channel and supervised all in-house creative production, subsequently optimizing social & brand outcomes while extending the brand’s social impact by over 100% in the past year alone!</li>
+                    <li>Facilitated weekly design reviews for both myself and teammates to dig deeper into brand evolution.</li>
+                </ul>
+            </div>
+
+            <div class="job santulanCreative">
+                <p>SANTULAN CREATIVE</p>
+                <p class="date">January 2023 – Present</p>
+                <p>Print Designer + Art Director</p>
+                <ul>
+                    <li>Supervised creative team while overseeing and managing print design + formatting process of Santulan Magazine, ensuring impeccable quality output aligned with brand guidelines crafted through aforementioned brand case study.</li>
+                    <li>Played a pivotal role in driving sales and promoting Santulan Magazine, actively engaging with potential customers and participating in targeted marketing campaigns both online and in person.</li>
+                    <li>Learned + demonstrated command of 3D design, crafting captivating assets to elevate brand presence and draw attention to print materials.</li>
+                    <li>Collaborated with talent featured in Santulan Magazine, ensuring timely communication while fostering an environment of ease and mutual respect.</li>
+                </ul>
+            </div>
+
+            <div class="job selfEmployed">
+                <p>THE KREATIVE CO.</p>
+                <p class="date">March 2019 – Present</p>
+                <p>Product Designer + Graphic Designer + Front-End Developer</p>
+                <ul>
+                    <li>Noted Collective Website Rebrand: Worked hands-on with founders & the executive team at prestige production agency, Noted Collective, to update their website based on current industry design trends, website accessibility, user-friendliness, and field analysis. Noted’s new website strategically aligns with their high production value and ability to still have fun, cleanly positioning their diverse portfolio at the forefront!</li>
+                    <li>On top of working for a variety of organizations, I consistently work to create graphics, develop & improve brand identities, and build user-centric websites for a variety of individuals, companies, and causes. I also strategize, wire-frame, and design emails on Klaviyo for everyone from beauty brands to bakeries. Current ongoing projects include two brand re-designs (skincare & production agency), two web design projects, and three logo design projects. As these are currently in progress, please email me for further details! I’d be more than happy to share my process with you!</li>
+                    <li>Designed and developed thekreative.co from start to finish; from brainstorming to prototyping to coding, designing, and iterating through different versions.</li>
+                </ul>
+            </div>
+
+                <div class="job ridge">
+                    <p>THE RIDGE</p>
+                    <p class="date">February 2022 - June 2022</p>
+                    <p>Graphic Designer</p>
+                    <ul>
+                        <li>Created over 20 emails per week incorporating updated branding, assets, and copy for The Ridge’s US and international accounts.</li> 
+                        <li>Utilized analytics from Klaviyo as well as those pulled by teammates to design effective email and SMS campaigns.</li>
+                        <li>Coordinated with a variety of teams including Brand, Marketing, Partnerships, International, stakeholders, and the executive team to create engaging emails and to accomplish team goals. Utilized Klaviyo analytics + marketing team analytics to design effective targeted email and SMS campaigns.</li>  
+                        <li>Created numerous ads and deliverables to fit specific guidelines provided by companies and publications partnered with The Ridge. Retouched pre-existing assets down to the pixel to fit specific campaign needs.</li> 
+                        <li>Utilized Monday, Notion, and Milanote to schedule, organize, and plan current & upcoming email campaigns, ad graphics, and design projects ranging from one graphic to upwards of 100!.</li>
+                    </ul>
+                </div>
+                
                 <div class="job structured">
                     <p>STRUCTURED AGENCY</p>
-                    <p class="date">July 2021 - Present</p>
+                    <p class="date">July 2021 - February 2022</p>
                     <p>Design Lead (Contract)</p>
                     <ul>
                         <li>Planned, prototyped, and designed marketing emails for a multitude of companies with varied aesthetics and goals with email-related best practices in mind.</li> 
@@ -42,19 +115,17 @@
                     <p class="date">December 2020 – June 2021</p>
                     <p>Director of Communications</p>
                     <ul>
-                        <li>Worked directly under former New Jersey Governor Jim McGreevey coordinating a team of individuals to enhance the Online presence and physical brand of New Jersey Reentry Corporation (NJRC).</li>
-                        <li>Created all digital and print assets for NJRC’s Annual Reentry conference featuring a variety of prominent public figures, such as Al Sharpton, Van Jones, Cory Booker, among many others.</li>
-                        <li>Established both team and personal schedules for short-term and long-term projects, planned tasks utilizing Click-Up as a Content Management System (CMS), and ensured goals and deadlines were met.</li>
-                        <li>Developed Prototype for new company website to create a more seamless and intuitive user experience.</li>    
+                        <li>Worked alongside former New Jersey Governor Jim McGreevey coordinating a team of individuals to enhance the Online presence and physical brand of New Jersey Reentry Corporation (NJRC).</li>
                         <li>Conceptualized, designed, and defined the creative vision for all branding, collateral, advertising campaigns, marketing messages, events, and conferences from start to finish.</li>
-                        <li>Coded multiple new web-pages on New Jersey Reentry Corporation’s website using HTML5, CSS3, and JavaScript.</li>
-                        <li>Organized conferences and events for hundreds of viewers and keynote speakers through Zoom to be streamed on Facebook Live and the NJRC website.</li>
-                        <li>Guided teammates through daily tasks such as social media posts, outreach emails, document layouts, technical issues, and any questions they may have had.</li>
+                        <li>Established both team and personal schedules for short-term and long-term projects, planned tasks utilizing Content Management System (CMS), and ensured goals and deadlines were met.</li>
                         <li>Oversaw all social media posts, graphics, photos, and web content to ensure brand consistency, clarity, and a strong brand voice.</li>
-                        <li>Corresponded with high-profile conference keynote speakers regarding their graphics, events, and information to help them better prepare for their speeches.</li>
-                        <li>Recorded and edited client testimonials, events, and conferences both in-person and through Zoom. Utilized Adobe After Effects to enhance videos with motion graphics.</li>
-                        <li>Planned, designed, and organized NJRC’s legal reports, annual reports, and employment reports using the Adobe Creative Suite (InDesign, Illustrator, Photoshop).</li>
                     </ul> 
+                    <p>Media Communications Specialist</p>
+                    <ul>
+                        <li>Worked to enhance the Online presence and physical brand of New Jersey Reentry Corporation (NJRC). Developed a prototype for a new company website to create a more seamless and intuitive user experience. Coded multiple new web pages on New Jersey Reentry Corporation’s website using HTML5, CSS3, and JavaScript.</li>
+                        <li>Created all digital and print assets for NJRC’s Annual Reentry conference featuring a variety of prominent public figures.</li>
+                        <li>Designed and organized NJRC’s legal reports, annual reports, and employment reports using the Adobe Creative Suite (In Design, Illustrator, Photoshop).</li>
+                    </ul>
                 </div>
 
                 <div class="job mixology">
@@ -62,54 +133,49 @@
                     <p class="date">December 2019 – December 2020</p>
                     <p>Lead Graphic Web Designer</p>
                     <ul>
-                        <li>Designed and launched engaging email campaigns in Klaviyo using  Photoshop, After Effects, and  Illustrator to boost online and in-store sales while keeping customers up to date on events and promotions.</li>
-                        <li>Prototyped new web pages for Mixology’s upcoming website launch using Figma, Sketch, and Adobe XD.</li>
-                        <li>Wrote and edited responsive CSS, HTML, Liquid, and JavaScript code via Shopify to create more appealing, intuitive, brand-centric, and user-friendly web pages.</li>
-                        <li>Currently creating an app for Mixology that allows for a more personalized and complete mobile experience. I’m doing it all from prototyping to coding! </li>    
-                        <li>Mastered time management and communication by working from home while quarantined and coordinating with over 30 Mixology team members on a daily to weekly basis.</li>
-                        <li>Provided creative direction and shooting photos for in-house product shots, lifestyle imagery, and graphic creation.</li>
-                        <li>Created social media and email collateral in accordance with user data observed in Klaviyo, Facebook, Instagram, and Google analytics.</li>
-                        <li>Wrote catchy copy for email and web campaigns to further improve e-commerce business.</li>
-                        <li>Created a variety of graphics and banners for Mixology’s landing pages, advertising funnels, and assortment of clothing collections.</li>
-                        <li>Created animations in After Effects to further engage customers.</li>
-                        <li>Implemented specific branding strategies behind Mixology’s in-house clothing brands. Designed full-fledged brand stories and branding guides for 10+ distinct in-house clothing brands.</li>
-                        <li>Worked with Mixology’s brick and mortar stores to create store-specific large and small scale print graphics from start to finish.</li>
-                        <li>Trained new designers, photographers, and e-commerce assistance while guiding them to utilize their voices and follow brand guidelines and protocols.</li> 
+                        <li>Mixology Rebrand 2020: Developed new branding guidelines based on user data provided by merchandising, marketing, & customer service teams coupled with company goals & ideologies. Wire-framed and prototyped new web pages for Mixology’s 2020 rebrand + website launch using Figma, Sketch, and Adobe XD. Wrote and edited responsive CSS, HTML, Liquid, and JavaScript code via Shopify to create more appealing, intuitive, brand-centric, and user-friendly web pages. Implemented specific branding strategies behind Mixology’s in-house clothing brands. Designed full-fledged brand stories and branding guides for Mixology as a whole + over 10 distinct in-house clothing brands.</li>
+                        <li>Strategized, designed, & launched engaging email campaigns in Klaviyo using Photoshop, After Effects, and Illustrator to boost online and in-store sales while keeping customers up to date.</li>
+                        <li>Developed and implemented more specifically tailored email flows and improved upon preexisting ones based on data gathered from Klaviyo and Salesforce. Improved Mixology’s online sales through email by 70% from 2019 to 2020.</li>
+                        <li>Created and cleaned up a variety of Klaviyo segments and lists based on data gathered from Salesforce in order to better personalize customers’ experiences.</li>
+                        <li>Trained new designers, photographers, and e-commerce assistance while guiding them to utilize their voices and follow brand guidelines and protocols.</li>
+                        <li>Oversaw creation of social media and email collateral in accordance with art layouts, user data gathered from Klaviyo, Facebook, Instagram, and Google analytics. Wrote copy for email and web campaigns to further improve e-commerce business. Created a variety of graphics and banners for Mixology’s landing pages, advertising funnels, and assortment of clothing collections.</li>
+                        <li>Provided creative direction and shot photos for in-house product shots, lifestyle imagery, and graphic creation.</li>
+                        <li>Worked with Mixology’s brick-and-mortar stores to create store-specific large and small scale print graphics.</li>
                     </ul> 
-                </div>
-
-                <div class="job selfEmployed">
-                    <p>SELF EMPLOYED</p>
-                    <p class="date">May 2019 – August 2020</p>
-                    <p>Freelance Web Developer & Graphic Designer</p>
-                    <ul>
-                        <li>Created websites & branded graphics that are seamlessly user-centric and aesthetically pleasing. Using everything from the Adobe Creative Cloud to HTML, CSS, JavaScript, React, Python, and more for a variety of companies and causes.</li>  
-                    </ul>
                 </div>
 
                 <div class="job varietyFun">
                     <p>VARIETY FUN</p>
                     <p class="date">January 2019 – May 2019</p>
-                    <p>Graphic Designer / Web Developer</p>
+                    <p>Graphic Designer + Web Developer</p>
                     <ul>
                         <li>Planned, sketched, and created high volumes of social media animations and posts in Photoshop, After Effects, and Illustrator leading up to Variety Fun’s official B2C launch.</li> 
                         <li>Created a keto calculator for a sister brand using HTML, CSS, and JavaScript, allowing users to tailor their diet to their specific needs.</li>    
-                        <li>Wireframed and created landing pages for all stages of Variety Fun’s pre-launch using HTML, CSS, Javascript, and Python.</li>   
+                        <li>Wire-framed and created landing pages for all stages of Variety Fun’s pre-launch using HTML, CSS, Javascript, and Python.</li>   
+                    </ul>
+                </div>
+
+                <div class="job eatBeets">
+                    <p>EAT BEETS!</p>
+                    <p class="date">April 2018 – December 2018</p>
+                    <p>Brand Designer</p>
+                    <ul>
+                        <li>Lead brainstorming sessions for Eat Beets! after conducting user research alongside the founder and social media manager.</li> 
+                        <li>Developed an initial brand identity for Eat Beets! centered around user research, brainstorming sessions, analytics, and founder’s notes.</li>    
+                        <li>Created graphics, motion graphics, illustrations, and packaging for the Eat Beets! brand.</li>   
+                        <li>Wire-framed and coded an engaging and on-brand website based on founder’s feedback prior to 2019 rebrand.</li>
                     </ul>
                 </div>
 
                 <div class="job BAB">
                     <p>BETTER ALMOND BUTTER</p>
                     <p class="date">March 2018 – December 2018</p>
-                    <p>Web and Graphic Designer / Digital Illustrator</p>
+                    <p>Graphic Designer + Web Developer</p>
                     <ul>
-                        <li>Rewrote code for all “Shop” pages to foster a simpler, cleaner, and more minimal user interface that showcased products and allowed for ease of user navigation.</li> 
-                        <li>Edited and wrote HTML, CSS, and JavaScript code to create and customize Better Almond Butter’s “Stockists” page, and to improve product pages and home page.</li>    
-                        <li>Reformatted product pages for a more aesthetically pleasing and user-friendly experience that placed our products at the forefront.</li>   
-                        <li>Incorporated new product photos throughout the website and created a new “featured” section at the bottom of the home page.</li>
-                        <li>Developed graphics, illustrations, animations, and packaging for the Eat Beets! brand, a sister company to Better Almond Butter.</li>
-                        <li>Created standard company email signatures.</li>
-                        <li>Wireframed and coded an engaging and on-brand Eat Beets! website prior to 2019 Better Almond Butter rebrand.</li>
+                        <li>Rewrote Liquid, HTML, CSS, and Javascript code for Better Almond Butter’s “Shop”, “Stockists”, and home pages to foster a simpler, cleaner, and more minimal user interface that showcased products and allowed for ease of user navigation.</li> 
+                        <li>Reformatted product pages for a more aesthetically pleasing and user-friendly experience that placed our products at the forefront after conducting user research and acquiring data from the marketing team.</li>    
+                        <li>Incorporated new product photos throughout the website and created a new “featured” section at the bottom of the home page.</li>   
+                        <li>Created new standard company email signatures that were cohesive and better fit Better Almond Butter’s brand voice.</li>
                     </ul>
                 </div>
 
@@ -118,11 +184,10 @@
                     <p class="date">March 2018 – September 2018</p>
                     <p>STEAM Instructor</p>
                     <ul>
-                        <li>Developed curriculums for a photography class as well as a Minecraft Mods after school program.</li> 
+                        <li>Developed curriculum for a photography class as well as a Minecraft Mods after school program.</li> 
                         <li>Worked with students to improve their coding skills by utilizing the Tynker app and command codes.</li>    
                         <li>Taught students ages 6 - 8 the basics of Swift code using Swift Playgrounds as well as interactive games to further their knowledge of how coding truly works.</li>   
-                        <li>Formulated educational, fun, and informative curriculums for a variety of Summer and Fall classes.</li>
-                        <li>Picked up students from schools if necessary.</li>
+                        <li>Formulated educational, fun, and informative curriculum for a variety of Summer and Fall classes.</li>
                     </ul>
                 </div>
 
@@ -147,7 +212,7 @@
                         <li>Created and edited logos, animations, and animated ads using Photoshop, After Effects, Lightroom, and Illustrator for both the front and back-end of Curatious.com.</li> 
                         <li>Collaborated with fellow interns to re-design the website’s home page, sales and pricing page, and art rating page.</li>    
                         <li>Designed a more aesthetically clean and user efficient company marketing map.</li>   
-                        <li>Wireframed and wrote HTML code to include social media links, logos, and share buttons on Curatious’ webpages.</li>
+                        <li>Wire-framed and wrote HTML code to include social media links, logos, and share buttons on Curatious’ webpages.</li>
                         <li>Added personality to Curatious’ social media by photographing gallery openings, art events, and day to day activities at the Curatious office.</li>
                         <li>Communicated with galleries to gather information about artwork for Curatious’ database.</li>
                         <li>Added and organized back end data including artist information and art specs.</li>
@@ -155,7 +220,7 @@
                 </div>
 
                 <p class="resumeSubhead">VOLUNTEER EXPERIENCE</p>
-                <div class="job abApostles">
+                <!-- <div class="job abApostles">
                     <p>ABOLITION APOSTLES</p>
                     <p class="date">April 2021 - Present</p>
                     <ul>
@@ -164,7 +229,7 @@
                         <li>Designing the layout for The Apostle, Abolition Apostles' monthly newsletter for incarcerated folks.</li>
                         <li>Writing letters to incarcerated individuals as a form of support, solidarity, and genuine interest in communicating.</li>
                     </ul>
-                </div>
+                </div> -->
                 
                 <div class="job ACLD">
                     <p>ACLD BETHPAGE</p>
@@ -215,31 +280,119 @@
                 <p class="resumeSubhead">SKILLS</p> 
                 <div class="job skills">
                     <p>Expert graphic design, motion graphics, email, prototyping, and photo editing, video, and audio skills:</p>
-                    <ul>
-                        <li>Photoshop   ..............................   7 YEARS</li> 
-                        <li>Illustrator   ...............................   6 YEARS</li>
-                        <li>InDesign   ..................................   6 YEARS</li>
-                        <li>Lightroom   ...............................   6 YEARS</li>
-                        <li>Premiere Pro   .........................   6 YEARS</li>
-                        <li>After Effects   ...........................   5 YEARS</li>
-                        <li>Sketch   .....................................   4 YEARS</li>
-                        <li>Klaviyo   .....................................   3 YEARS</li>
+                    <ul class="job skills container">
+                        <div class="flex-child jobSkill">
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>InDesign</li>
+                            <li>Lightroom</li>
+                            <li>Premiere Pro</li>
+                            <li>After Effects</li>
+                            <li>Sketch & Figma</li>
+                            <li>Klaviyo</li>
+                            <li>Blender (3D)</li>
+                        </div>
+                          
+                        <div class="flex-child line">
+                            ............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                        </div>
+
+                        <div class="flex-child years">
+                            8 YEARS
+                           <br>8 YEARS
+                           <br>8 YEARS
+                           <br>7 YEARS
+                           <br>7 YEARS
+                           <br>6 YEARS
+                           <br>6 YEARS
+                           <br>6 YEARS
+                           <br>4 MONTHS
+                        </div>
                     </ul>
 
                     <p>Diverse front-end programming and database knowledge:</p>
-                    <ul>
-                        <li>HTML, HTML5, CSS   ...............   7 YEARS</li>
-                        <li>Java   ........................................   5 YEARS</li>
-                        <li>JavaScript   .............................   4 YEARS</li>
-                        <li>Wireframing   .........................    3 YEARS</li>
-                        <li>GIT   ...........................................   2 YEARS</li>
-                        <li>Python   ....................................   2 YEARS</li>
-                        <li>Processing Library   ..............   2 YEARS</li>
-                        <li>Swift   .......................................    2 YEARS</li>
-                        <li>SQL   .........................................    1 YEAR</li>
-                        <li>D3 Library   .............................    1 YEAR</li>
-                        <li>Ruby on Rails   ........................    1 YEAR</li>
+                    <ul class="job skills container">
+                        <div class="flex-child jobSkill">
+                            <li>HTML, HTML5, CSS</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>Wire-framing</li>
+                            <li>GIT</li>
+                            <li>Python</li>
+                            <li>Processing Library</li>
+                            <li>Swift</li>
+                            <li>SQL</li>
+                            <li>D3 Library</li>
+                            <li>Ruby on Rails</li>
+                        </div>
+                        <div class="flex-child line">
+                            ............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                            <br>............................
+                        </div>
+                        <div class="flex-child years">
+                            8 YEARS
+                            <br>5 YEARS
+                            <br>5 YEARS
+                            <br>5 YEARS
+                            <br>3 YEARS
+                            <br>2 YEARS
+                            <br>2 YEARS
+                            <br>2 YEARS
+                            <br>1 YEAR
+                            <br>1 YEAR
+                            <br>1 YEAR
+                        </div>
                     </ul>
+
+                    <p>Soft skills:</p>
+                    <ul>
+                        <li>User Interface (UI) Design</li>
+                        <li>User Experience (UX) Design</li>
+                        <li>Design Psychology</li>
+                        <li>UX Research</li>
+                        <li>UX Writing</li>
+                        <li>Brand Architecture</li>
+                        <li>Brand Identity</li>
+                        <li>Brand Guideline Creation</li>
+                        <li>Branding + Template Creation</li>
+                        <li>Prototyping</li>
+                        <li>Web Design</li>
+                        <li>Wireframing</li>
+                        <li>Front-End Web Development</li>
+                        <li>Logo Design</li>
+                        <li>Print Design</li>
+                        <li>Typesetting</li>
+                        <li>Motion Graphics</li>
+                        <li>Social Media Design</li>
+                        <li>Marketing Design</li>
+                        <li>Content Management</li>
+                        <li>Cross-functional Team Leadership</li>
+                        <li>Project Management</li>
+                        <li>Trend Forecasting</li>
+                        <li>Email Strategy</li>
+                        <li>Social Strategy (Instagram)</li>
+                        <li>Social Calendar Creation</li>
+                        <li>Marketing Map Creation</li>
+                        <li>Facebook Ads</li>
+                    </ul>
+
 
                     <p>Desktop and web app creation – utilizing React and Electron alongside authentication programs and back-end databases to create functional, beautiful, and user-friendly applications.</p>
                     
@@ -278,16 +431,43 @@
     </section>
 
     <footer>
-        <img class="copyright" src="Visuals/Copyright222.png">
+        <div></div>
+        <a href="/index"><img class="copyright" src="Visuals/Copyright222.webp" alt="copyright image"></a>
         <ul>
-            <li class="footerLink"><a href="/about.html">ABOUT</a></li>
-            <li class="footerLink"><a href="/community.html">COMMUNITY</a></li>
-            <li class="footerLink"><a href="/contact.html">CONTACT</a></li>
+            <li class="footerLink"><a href="/about">ABOUT</a></li>
+            <li class="footerLink"><a href="/community">COMMUNITY</a></li>
+            <li class="footerLink"><a href="/contact">CONTACT</a></li>
             <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/" target="_blank">LINKEDIN</a></li>
-            <li class="footerLink"><a href="/resume.html">RESUME</a></li>
+            <li class="footerLink"><a href="/resume">RESUME</a></li>
             <li class="footerLink"><a href="http://wisteriaandivy.com/" target="_blank">SHOP</a></li>
         </ul>
+        <div></div>
     </footer>
+
+    <script>
+        // Mobile Menu
+        var list = document.querySelectorAll('.list');
+
+        function accordion(e) {
+          e.stopPropagation();
+          if (this.classList.contains('active')) {
+              this.classList.remove('active');
+          } else
+          if (this.parentElement.parentElement.classList.contains('active')) {
+              this.classList.add('active');
+          } else
+          {
+              for (i = 0; i < list.length; i++) {
+                  list[i].classList.remove('active');
+        
+              }
+              this.classList.add('active');
+          }
+        }
+        for (i = 0; i < list.length; i++) {
+          list[i].addEventListener('click', accordion);
+        }
+    </script>
 
 </body>
 </html>

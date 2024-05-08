@@ -15,7 +15,7 @@ body{
 /* HEADER */
 .homeLink{
     display: inline-flex;
-    font-family: Lydian;
+    font-family: 'Lydian';
     justify-content: left;
     align-items: center;
     justify-items: left;
@@ -37,11 +37,26 @@ body{
     font-family: Helvetica;
     color: #000000;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.05em;
     text-decoration: none !important;
     align-items: center;
     margin: 20px 0% 0% 1%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.currentLink{
+    display: inline-flex;
+    float: right;    
+    font-family: Helvetica;
+    /* color: #C97D54 !important; */
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    align-items: center;
+    margin: 15px 0% 0% 1%;
     cursor: pointer;
     transition: 0.2s ease-in;
 }
@@ -57,25 +72,52 @@ body{
     margin-right: 2%;
 }
 
+.currentLink.inquire{
+    border: solid 1px;
+    padding: 3px 5px 3px 5px;
+    background: #CCFF00;
+    color: #000000;
+}
+
 /* MAIN */
 .contactContainer{
-    height: 85vh;
-    width: 70vw;
-    margin-top: 2%;
+    /* height: 85vh; */
+    width: 80vw !important;
+    margin-top: 7%;
     margin-left: 5%;
     overflow: scroll;
 }
 
 .contactHead{
     font-family: Pilowlava;
-    font-size: 7em;
+    font-size: 6.5vw;
     color: #fff;
 }
 
+.contactSubhead{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 2vw;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.contactSubhead a{
+    font-family: 'Mondwest-Regular' !important;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    font-size: 2vw;
+    letter-spacing: 0.02em;
+    color: #C97D54;
+}
+
+.contactSubhead a:hover{
+    color: #000;
+}
+
 .contactBody{
-    font-family: Mondwest;
-    font-size: 17px;
-    letter-spacing: 0.07em;
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 1vw;
+    letter-spacing: 0.02em;
     color: #fff;
 }
 
@@ -89,77 +131,53 @@ body{
     color: #000000;
 }
 
-/* FOR THE PHP FORM */
-/* Style inputs, select elements and textareas */
-/* input[type=text], select, textarea{
-    width: 100%;
-    font-family: Helvetica;
-    color: #8ea318;
-    padding: 12px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    resize: both;
-  } */
+.contactBody.credit{
+    margin: 20% 0 5% 0;
+}
+
+/* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
+.body::-webkit-scrollbar{
+    width: 10px;  
+     height: 0px;
+}
+
+.body::-webkit-scrollbar-track:vertical {
+    background: #f1f1f1;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
   
-  /* Style the label to display next to the inputs */
-  /* label {
-    padding: 12px 12px 12px 0;
-    font-family: Helvetica;
-    font-size: 13px;
-    text-align: center;
-    display: inline-block;
-  }
-   */
-  /* Style the submit button */
-  /* input[type=submit] {
-    font-family: Helvetica;
-    background-color: #C97D54;
-    color: #ffffff;
-    padding: 12px 45px;
-    border: none;
-    cursor: pointer;
-    float: right;
-    margin-top: 1%;
-  } */
+  .body::-webkit-scrollbar-thumb:vertical {
+    background: #a396ff;
+    border-radius: 50px;
+    padding-bottom: 0%;
+}
+
+  .body::-webkit-scrollbar-track-piece:vertical{
+      background: #f1f1f1;
+      border-radius: 50px;
+      padding-bottom: 0%;
+}
+
+  .body::-webkit-scrollbar-corner:vertical{
+      display: none;
+      padding-bottom: 0%;
+}
   
-  /* Style the container */
-  /* .container {
-    width: 40vw;
-    border: 2px solid #C97D54; */
-    /* background-color: #f2f2f2; */
-    /* padding: 20px;
-    margin-top: 4%;
-  } */
+  .body::-webkit-scrollbar-track:horizontal {
+    display: none;
+    padding: 0%;
+}
   
-  /* Floating column for labels: 25% width */
-  /* .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  } */
-  
-  /* Floating column for inputs: 75% width */
-  /* .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  } */
-  
-  /* Clear floats after the columns */
-  /* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-   */
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  /* @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-   */
+  .body::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+    padding: 0%;
+}
+
+  .body::-webkit-scrollbar-track-piece:horizontal{
+    display: none;
+    padding: 0%;
+}
 
 /* FOOTER BELOW */
 footer {
@@ -189,7 +207,7 @@ footer ul{
     text-decoration: none !important;
     color: #ffffff;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.05em;
     text-decoration: none;
     text-align: center;

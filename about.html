@@ -5,21 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/about.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="icon" href="/Visuals/favicon.ico" type="image/x-icon">
 
     <title>About</title>
 </head>
 
 <body>
     <header>
-        <div class="navLinkContainer">
-            <a class="homeLink" href="/index.html">The Kreative Co.</a>
-            <a class="headerLink" href="/community.html">COMMUNITY</a> 
-            <a class="headerLink" href="/contact.html">CONTACT</a> 
-            <a class="headerLink" href="/resume.html">RESUME</a> 
-            <a class="headerLink" href="/projects.html">PROJECTS</a> 
-            <a class="headerLink" href="/code.html">CODE</a> 
-            <a class="headerLink" href="/photos.html">PHOTOGRAPHY</a> 
-            <a class="headerLink" href="/graphics.html">DESIGN</a> 
+        <div class="navLinkContainer">            
+            <a class="homeLink" href="/index">The Kreative Co.</a>
+
+            <!-- MOBILE MENU -->
+            <ul class="menu">
+                <li class="list"><a href="#"><img class="mobileMenu" src="/Visuals/MENU999.png"></a>
+                   <ul class="items">
+                     <li class="mobileContact"><a href="/contact">INQUIRE</a></li>
+                     <li><a href="/graphics">DESIGN</a></li>
+                      <!-- <li><a href="/productDesign">PRODUCT</a></li> -->
+                      <li><a href="/photos">PHOTOGRAPHY</a></li>
+                      <!-- <li><a href="/code">CODE</a></li> -->
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/community">COMMUNITY</a></li>
+                   </ul>
+                </li>
+             </ul>
+
+            <!-- DESKTOP MENU -->
+            <a class="inquire" href="/contact">INQUIRE</a>
+            <a class="headerLink" href="/community">COMMUNITY</a> 
+            <a class="currentLink" href="/about">ABOUT</a>
+            <!-- <a class="headerLink" href="/resume.html">RESUME</a>  -->
+            <a class="headerLink" href="/projects">PROJECTS</a> 
+            <!-- <a class="headerLink" href="/code">CODE</a>  -->
+            <a class="headerLink" href="/photos">PHOTOGRAPHY</a> 
+            <!-- <a class="headerLink" href="/productDesign">PRODUCT</a> -->
+            <a class="headerLink" href="/graphics">DESIGN</a> 
         </div>
     </header>
 
@@ -31,6 +54,32 @@
                 This website is more than just a website. More than just a portfolio. More than just a collection of works.</p>
             <BR>
             <p class="aboutSubhead">It is an experience—a place one visits through body, mind, and soul.</p>
+            <BR class="bigBreak">
+            <p class="aboutKN">ABOUT THE KREATIVE CO.</p>
+            <p class="aboutBody">The Kreative Co. is a multidisciplinary creative studio blending art, code, and human psychology to make pure magic. We craft intentional experiences that make you look like a mind reader! If your journey is pulling you towards:</p>
+            <ul class="aboutList">
+                <div class="aboutListShapes-child">
+                    <li><div><img src="/Visuals/serviceHex_Hex1 copy.webp"></div>A WEBSITE</li>
+                    <li>as exciting and unforgettable as it is functional</li>  
+                </div>
+                <div class="aboutListShapes-child">
+                    <li><div><img src="/Visuals/serviceHex_Hex4 copy.webp"></div>EMAILS</li>
+                    <li>that bring a distinctive experience while delivering out of this world results to you</li>
+                </div>
+                <div class="aboutListShapes-child">
+                    <li><div><img src="/Visuals/serviceHex_Hex3 copy.webp"></div>BRANDING</li>
+                    <li>that sparks your wildest dreams and keeps everyone coming back for more</li>
+                </div>
+                <div class="aboutListShapes-child">
+                    <li><div><img src="/Visuals/serviceHex_Hex5 copy.webp"></div>SOCIALS</li>
+                    <li>everyone will clamor to share</li>
+                </div>    
+            </ul>
+            <p class="aboutH2">WE'VE GOT YOU!</p>
+            <p class="aboutBody">And we're inspired fully and only by all that inspires you.</p>
+            <div class="inquireBody"><a href="/contact">INQUIRE!</a></div>
+
+        
             <BR class="bigBreak">
             <p class="aboutKN">ABOUT KN</p>
             <BR>
@@ -45,22 +94,49 @@
                 <BR>
                 When I’m not gazing longingly into a computer screen, I bide my time watching 80s movies, jamming to whatever music my 
                 friends happen to be making, being a complete goof, and fawning over every animal I lay eyes on. I also sell candles and 
-                jewelry to benefit a variety of causes, charities, and groups. You can learn more about that <a href="/community.html">here.</a></p>
+                jewelry to benefit a variety of causes, charities, and groups. You can learn more about that <a href="/community">here.</a></p>
             <p class="thankYou">THANK YOU FOR VISITING <img class="thankYouHeart" src="Visuals/Heart.png" alt="thank you heart"></p>
         </div>
     </section>
 
     <footer>
-        <img class="copyright" src="Visuals/Copyright222.png">
+        <div></div>
+        <img class="copyright" src="/Visuals/Copyright222.webp">
     
         <ul>
-            <li class="footerLink"><a href="/about.html">ABOUT</a></li>
-            <li class="footerLink"><a href="/community.html">COMMUNITY</a></li>
-            <li class="footerLink"><a href="/contact.html">CONTACT</a></li>
+            <li class="footerLink"><a href="/about">ABOUT</a></li>
+            <li class="footerLink"><a href="/community">COMMUNITY</a></li>
+            <li class="footerLink"><a href="/contact">CONTACT</a></li>
             <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/" target="_blank">LINKEDIN</a></li>
-            <li class="footerLink"><a href="/resume.html">RESUME</a></li>
+            <li class="footerLink"><a href="/resume">RESUME</a></li>
             <li class="footerLink"><a href="http://wisteriaandivy.com/" target="_blank">SHOP</a></li>
         </ul>
+        <div></div>
     </footer>
+
+    <script>
+        // Mobile Menu
+        var list = document.querySelectorAll('.list');
+
+        function accordion(e) {
+          e.stopPropagation();
+          if (this.classList.contains('active')) {
+              this.classList.remove('active');
+          } else
+          if (this.parentElement.parentElement.classList.contains('active')) {
+              this.classList.add('active');
+          } else
+          {
+              for (i = 0; i < list.length; i++) {
+                  list[i].classList.remove('active');
+        
+              }
+              this.classList.add('active');
+          }
+        }
+        for (i = 0; i < list.length; i++) {
+          list[i].addEventListener('click', accordion);
+        }
+    </script>
 </body>
 </html>

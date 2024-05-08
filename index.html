@@ -4,24 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Kreative Co. 2021</title>
+    <meta name="description" content="The Kreative Co. was spawned out of a desire to create beautiful, useful, immersive, and experiential art. This website is more than just a website. More than just a portfolio. More than just a collection of works. It is an experience—a place one visits through body, mind, and soul.">
+    <title>The Kreative Co. 2024</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="stylesheet" href="/fonts.css">
     <link rel="icon" href="/Visuals/favicon.ico" type="image/x-icon">
+    
 </head>
-<body>
-    <!-- Hey bb I love you so much you are my favorite BB in the whole world.
-        Moth, may potat brian watch over you, you my sweet pickle goblin. 🖤🌚🌝🖤
-        -->
+<body class="homeBody">
     <header>
-        <a href="/index.html" class="homeLink">The Kreative Co.</a>
+        <div class="navLinkContainer">
+            <a class="homeLink" href="/index">The Kreative Co.</a>
+
+            <!-- MOBILE MENU -->
+            <ul class="menu">
+                <li class="list"><a href="#"><img class="mobileMenu" src="/Visuals/MENU999.png"></a>
+                   <ul class="items">
+                    <li class="mobileContact"><a href="/contact">INQUIRE</a></li>
+                      <li><a href="/graphics">DESIGN</a></li>
+                      <!-- <li><a href="/productDesign">PRODUCT</a></li> -->
+                      <li><a href="/photos">PHOTOGRAPHY</a></li>
+                      <!-- <li><a href="/code">CODE</a></li> -->
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/community">COMMUNITY</a></li>
+                   </ul>
+                </li>
+             </ul>
+        </div>
     </header>
 
 
     <section class="hero">
+
+        <!-- The Modal -->
+        <div id="mobileModal" class="mobileModal">
+
+            <!-- Modal content -->
+            <div class="mobileModal content">
+                <span class="close">X</span>
+                <p class="modalHeading">WELCOME! I'M THANKFUL YOU'RE HERE. JUST A NOTE:</p>
+                <p>THIS WEBSITE IS AN ART PROJECT IN ITSELF. WHILE IT'S MOBILE FRIENDLY, VIEWING MY WORK MAY BE EASIER ON A DESKTOP OR LARGER SCREEN. enjoy your stay!</p>
+            </div>
+        
+        </div>
         
         <!-- CHILD 1 --> 
-        <div id="heroImage">
-         <img src="/Visuals/Arch333.png">
+        <div class="heroImage" id="heroImage">
+         <img src="/Visuals/Welcome111.webp">
+        </div>
+
+        <div class="mobileHeroImg" id="mobileHeroImage">
+            <img src="/Visuals/MOBILEARCH777.webp" alt="mobile background arch with welcome text over top">
         </div>
 
         <!-- CHILD 2 --> 
@@ -32,48 +67,62 @@
 
        <!-- CHILD 3 --> 
         <div id="descHexagons">
+            <!-- DESKTOP HEX -->
             <div class="hex" id="hexGraphics">
-                <a href="/graphics.html"><img src="Visuals/Hex777.svg"></a>
+                <a href="/graphics"><img src="Visuals/Hex111.png"></a>
             </div>
             <div class="hex" id="hexPhotos">
-                <a href="/photos.html"><img src="Visuals/Hex111.png"></a>
+                <a href="/photos"><img src="Visuals/Hex111.png"></a>
             </div>
-            <div class="hex" id="hexCode">
-                <a href="/code.html"><img src="Visuals/Hex111.png"></a>
+            <div class="hex" id="hexProduct">
+                <a href="/about"><img src="Visuals/Hex111.png"></a>
             </div>
             <div class="hex" id="hexProjects">
-                <a href="/projects.html"><img src="Visuals/Hex111.png"></a>
+                <a href="/projects"><img src="Visuals/Hex111.png"></a>
             </div>
             <div class="hex" id="hexResume">
-                <a href="/resume.html"><img src="Visuals/Hex111.png"></a>
+                <a href="/resume"><img src="Visuals/Hex111.png"></a>
             </div>
             <div class="hex" id="hexContact">
-                <a href="/contact.html"><img src="Visuals/Hex111.png"></a>
+                <a href="/contact"><img src="Visuals/Hex111.png"></a>
+            </div>
+
+            <!-- MOBLE HEX -->
+
+            <div class="mobileHex">
+                <a href="/graphics"><img src="/Visuals/DESIGN111.png"></a>
+                <a href="/photos"><img src="/Visuals/PHOTOS222.png"></a>
+                <a href="/code"><img src="/Visuals/CODE333.png"></a>
+            </div>
+            <div class="mobileHex">
+                <a href="/projects"><img src="/Visuals/PROJECTS666.png"></a>
+                <a href="/resume"><img src="/Visuals/RESUME555.png"></a>
+                <a href="/contact"><img src="/Visuals/CONTACT444.png"></a>
             </div>
         </div>
     </section>
 
 
     <footer>
-       
-            <img class="copyright" src="Visuals/Copyright222.png">
+        <div></div>
+            <img class="copyright" src="Visuals/Copyright222.webp" alt="copyright image">
         
         <ul>
-            <li class="footerLink"><a href="/about.html">ABOUT</a></li>
-            <li class="footerLink"><a href="/community.html">COMMUNITY</a></li>
-            <li class="footerLink"><a href="/contact.html">CONTACT</a></li>
+            <li class="footerLink"><a href="/about">ABOUT</a></li>
+            <li class="footerLink"><a href="/community">COMMUNITY</a></li>
+            <li class="footerLink"><a href="/contact">CONTACT</a></li>
             <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/" target="_blank">LINKEDIN</a></li>
-            <li class="footerLink"><a href="/resume.html">RESUME</a></li>
+            <li class="footerLink"><a href="/resume">RESUME</a></li>
             <li class="footerLink"><a href="http://wisteriaandivy.com/" target="_blank">SHOP</a></li>
-            
         </ul>
+        <div></div>
     </footer>
 
     <script>
         const descText = document.getElementById("descChangingText");
         const hexGraphics = document.getElementById("hexGraphics");
         const hexPhotos = document.getElementById("hexPhotos");
-        const hexCode = document.getElementById("hexCode");
+        const hexProduct = document.getElementById("hexProduct");
         const hexProjects = document.getElementById("hexProjects");
         const hexResume = document.getElementById("hexResume");
         const hexContact = document.getElementById("hexContact");
@@ -82,44 +131,126 @@
         hexGraphics.onmouseover = function () {
             descText.innerHTML = "graphics";
             descText.style.marginRight = "4%";
-            descText.style.marginLeft = "14%";
-            descText.style.fontSize = "5em";
+            descText.style.marginLeft = "16%";
+            descText.style.fontSize = "4vw";
         };
 
         hexPhotos.onmouseover = function () {
             descText.innerHTML = "photography";
             descText.style.marginRight = "4%";
-            descText.style.marginLeft = "6%";
-            descText.style.fontSize = "5em";
+            descText.style.marginLeft = "9%";
+            descText.style.fontSize = "4vw";
         };
 
-        hexCode.onmouseover = function () {
-            descText.innerHTML = "code";
-            descText.style.marginRight = "4%";
-            descText.style.marginLeft = "21%";
-            descText.style.fontSize = "5em";
+        hexProduct.onmouseover = function () {
+            descText.innerHTML = "about";
+            descText.style.marginRight = "0vw";
+            descText.style.marginLeft = "20%";
+            descText.style.fontSize = "4vw";
+            descText.style.lineHeight = "70%";
+            descText.style.letterSpacing = "-0.009em";
         };
 
         hexProjects.onmouseover = function () {
             descText.innerHTML = "projects";
             descText.style.marginRight = "4%";
-            descText.style.marginLeft = "15%";
-            descText.style.fontSize = "5em";
+            descText.style.marginLeft = "18%";
+            descText.style.fontSize = "4vw";
         };
 
         hexResume.onmouseover = function () {
             descText.innerHTML = "resume";
             descText.style.marginRight = "4%";
-            descText.style.marginLeft = "16%";
-            descText.style.fontSize = "5em";
+            descText.style.marginLeft = "18%";
+            descText.style.fontSize = "4vw";
         };
 
         hexContact.onmouseover = function () {
             descText.innerHTML = "contact";
             descText.style.marginRight = "4%";
-            descText.style.marginLeft = "16%";
-            descText.style.fontSize = "5em";
+            descText.style.marginLeft = "18%";
+            descText.style.fontSize = "4vw";
         };
+
+
+
+
+        // Mobile Menu
+        var list = document.querySelectorAll('.list');
+
+        function accordion(e) {
+          e.stopPropagation();
+          if (this.classList.contains('active')) {
+              this.classList.remove('active');
+          } else
+          if (this.parentElement.parentElement.classList.contains('active')) {
+              this.classList.add('active');
+          } else
+          {
+              for (i = 0; i < list.length; i++) {
+                  list[i].classList.remove('active');
+        
+              }
+              this.classList.add('active');
+          }
+        }
+        for (i = 0; i < list.length; i++) {
+          list[i].addEventListener('click', accordion);
+        }
+
+
+
+
+        // MOBILE MODAL
+        var modal = document.getElementById("mobileModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+
+// GET COOKIE SO THAT MOBILE MODAL ONLY SHOWS UP ONCE
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+            }
+            return "";
+        }
+
+        var cookie = getCookie('shown');
+            if (cookie) {
+            showPopup();
+        }
+
+        function showPopup() {
+            setCookie('shown', 'true', 365);
+            modal.style.display = "block";
+        }
+
     </script>
 
 </body>

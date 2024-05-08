@@ -1,0 +1,1156 @@
+/* HIDES MENU ON BIG SCREEN */
+@media only screen and (min-width: 701px){
+    .menu{
+        display: none;
+    }
+
+    .mobileMenu{
+      display: none;
+    }
+
+    .mobileHeroImg{
+      display: none;
+    }
+
+    .mobileHex{
+      display: none;
+    }
+
+    .mobileModal{
+      display: none;
+    }
+
+    .content{
+      padding-right: 2%;
+    }
+
+    .panel{
+      padding-bottom: 2%;
+    }
+
+    .panel::-webkit-scrollbar{
+      width: 0px;  
+      height: 10px;
+    }
+  
+    .panel::-webkit-scrollbar-track:vertical {
+      display: none;
+      padding: 0%;
+    }
+    
+    .panel::-webkit-scrollbar-thumb:vertical {
+      display: none;
+      padding: 0%;
+    }
+  
+    .panel::-webkit-scrollbar-track-piece:vertical{
+      display: none;
+      padding: 0%;
+    }
+  
+    .panel::-webkit-scrollbar-corner:vertical{
+        display: none;
+        padding: 0%;
+    }
+    
+    .panel::-webkit-scrollbar-track:horizontal {
+      background: #f1f1f1;
+      border-radius: 50px;
+      padding-bottom: 0%;
+    }
+    
+    .panel::-webkit-scrollbar-thumb:horizontal {
+      background: #a396ff;
+      border-radius: 50px;
+      padding-bottom: 0%;
+    }
+  
+    .panel::-webkit-scrollbar-track-piece:horizontal{
+      background: #f1f1f1;
+      border-radius: 50px;
+      padding-bottom: 0%;
+    }
+
+    .panel::-webkit-scrollbar-corner:horizontal{
+      display: none;
+      padding:none;
+    }
+ }
+
+ /* MOBILE & SMALL SCREEN */
+@media only screen and (max-width: 700px) {    
+  .homeBody{
+    /* home only */
+    overflow-x: auto !important;
+    overflow-y: scroll !important;
+  }
+
+  body{
+    /* all other pages */
+    overflow-x: auto !important;
+    overflow-y: scroll !important;
+  }
+
+/* HOME HERO */
+
+    .hero{
+      overflow-y: none !important;
+      height: 65vh;
+    }
+
+    .heroImage{
+      display: none;
+    }
+
+    .hex{
+      display: none;
+    }
+
+    .mobileHeroImg{
+      width: 90vw;
+      height: 55vh;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+
+/* HOME DESCRIPTION */
+      #desc{
+        display: none;
+      }
+
+      #descHexagons{
+       height: 28vh;
+       margin-top: 29vh;
+      }
+
+      .mobileHex img{
+        width: 25vw;
+        margin: 7px;
+      }
+
+/* MOBILE MENU */
+      .mobileMenu{
+        width: 80px;
+        display: block;
+        margin: auto;
+        padding-bottom: 15px;
+      }
+
+      ul.menu {
+        padding: 0;
+        list-style: none;
+        /* width: 400px; */
+        margin: 0 auto;
+        /* font-family: 'Roboto'; */
+        /* clear: left; */
+        display: table;
+        /* left: -3px; */
+      }
+      ul.menu .list {
+        /* font-size: 14px;
+        border-bottom: 1px solid #324252; */
+        position: relative;
+        width: 100%;
+        /* box-sizing: border-box; */
+        height: 50px;
+        /* vertical-align: sub; */
+        /* clear: both; */
+      }
+    
+    
+      ul.menu .list a {
+        text-decoration: none;
+        color: #000000;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 11px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        /* height: 100%; */
+      }
+    
+      ul.menu .list a:hover {
+        transition: 300ms all;
+        color: #09fbd2;
+      }
+      ul.menu .list .items {
+        height: 0px;
+        overflow: hidden;
+      }
+      ul.menu .list .items a {
+        padding: 10px;
+      }
+      ul.menu .list .items a:hover {
+        color: #FF7A00;
+        transition: 300ms all;
+      }
+      ul.menu .list:last-child {
+        border-bottom: none;
+      }
+    
+    
+      ul.menu .active > .items {
+        display: block;
+        padding: 0px;
+        height: auto;
+        color: #fff;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 200ms;
+        clear: both;
+        float: left;
+        width: 100%;
+      }
+
+      ul.menu .active > .items li {
+        padding: 0px;
+        /* border-bottom: 1px dashed #324252; */
+        list-style: none;
+      }
+
+      ul.menu .active > .items li:last-child {
+        border-color: transparent;
+        padding-bottom: 0px;
+      }
+
+      ul.menu .active > .items .active > .items {
+        background-color: #2f4b67;
+      }
+
+      ul.menu .active > a {
+        color: #46efa4;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      ul.menu .active .list {
+        background: #697d92;
+      }
+
+      ul.menu .active .list a {
+        padding: 17px 0px 17px 45px;
+      }
+
+      .mobileContact{
+        color: #000000;
+        background: #CCFF00;
+      }
+
+/* NAV */
+      .homeLink{
+        display: flex;
+        font-family: 'Lydian';
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 35px;
+        color: #000000;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    .currentLink{
+        display: none;
+    }
+    
+    .headerLink{
+        display: none;
+    }
+
+    .inquire{
+      display: none;
+    }
+
+
+
+/* PANELS OF PORTFOLIO CONTENT ON ALL CONTENT PAGES */
+    .panel{
+      margin: auto;
+      height: 60vh;
+      width: 96vw;
+      flex-wrap: wrap;
+      flex-direction:column;
+      justify-content: flex-start;
+      /* align-items: flex-start; */
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+  
+    #smallImg{
+      width: 100px;
+      height:fit-content;
+      padding: 2% 0 2% 0;
+      overflow-y: hidden !important;
+      overflow-x: hidden;
+    }
+
+    #expandImg{
+      width: 100px;
+      height: 100%;
+      padding: 2% 0 2% 0;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    #listImage{
+      height: 45vh;
+      margin: 0.3em 2em 0.3em 2em;
+    }
+
+    #palestine{
+      display: none;
+      margin: auto;
+      flex-wrap: wrap;
+      height: 90vh;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    } 
+  
+    #octEventGuide{
+        display: none;
+        margin: auto;
+        flex-wrap: wrap;
+        height: 90vh;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    } 
+  
+    #novEventGuide{
+        display: none;
+        margin: auto;
+        flex-wrap: wrap;
+        height: 90vh;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    #climateWeek{
+      display: none;
+      margin: auto;
+      flex-wrap: wrap;
+      height: 90vh;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #allAboutConsump{
+      display: none;
+      margin: auto;
+      flex-wrap: wrap;
+      height: 90vh;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #boldJourney{
+      display: none;
+      margin: auto;
+      flex-wrap: wrap;
+      height: 90vh;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+
+/* GRAPHICS PAGE */
+    .graphicsMain{
+        width: 100vw !important;
+        height: 100%;
+        background-color: #D5D3BE !important;
+        overflow-y: scroll !important;
+    }
+    
+    .graphicsContainer{
+        height: 77%;
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0;
+        overflow-y: scroll !important;
+    }
+    
+    .graphicsContainer p{
+        font-family: 'Mondwest-Regular' !important;
+        font-size: 2.5em;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .graphicDirections{
+        font-family: 'Mondwest-Regular' !important;
+        font-size: 1.5em;
+        letter-spacing: 0.03em;
+        margin-top: 2.3%;
+        position: relative;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+/* PRODUCT DESIGN PAGE */
+  .productMain{
+    width: 90vw;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 0 20px 0 20px;
+    background-color: inherit;
+  }
+
+  .productTempMain{
+    width: 90vw;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 0 20px 0 20px;
+    background-color: inherit;
+  }
+
+  .productContainer{
+    height: 77%;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 0%;
+    padding-right: 0%;
+    overflow: scroll;
+  }
+
+  .productHead{
+    font-family: Pilowlava;
+    font-size: 42px;
+  }
+
+  .productSubhead{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin: 5% 0% 0% 0%;
+    line-height: 140%;
+  }
+
+  .productBody{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+
+  .productFormContainer{
+    flex-wrap: wrap;
+  }
+
+  .formsToggle{
+    width: 100%;
+  }
+
+  .tknInput{
+    background: none;
+    width: 345px;
+    padding: 20px 20px 10px 0px;
+    margin: 1px 0 1px 1px;
+    border-top: none;
+    border-right: none;
+    border-bottom: solid 1px;
+    border-left: none;
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #808080;
+  }
+
+  .tknInput ::placeholder{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #808080;
+  }
+
+  .signUpExpln{
+    width: 100%;
+  }
+
+  .productLinkContainer{
+    flex-wrap: wrap;
+  }
+
+  .productDesignSummary{
+    font-family: Helvetica;
+    font-size: 3.2vw;
+    font-weight: 400;
+    margin: 1.5% 0% 2% 0%;
+    letter-spacing: 0.02em;
+  }
+
+
+/* PHOTO PAGE */
+  .photoContainer{
+      height: 77%;
+      width: 100%;
+      margin-top: 5%;
+      margin-left: 0;
+      overflow:auto;
+  }
+  
+  .photoContainer p{
+      font-family:'Mondwest-Regular' !important;
+      font-size: 2.5em;
+      line-height: 150%;
+      text-align: center;
+  }
+
+  .photoDirections{
+      font-family: 'Mondwest-Regular' !important;
+      font-size: 1.5em;
+      letter-spacing: 0.03em;
+      margin-top: 2.3%;
+      position: relative;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+  }
+
+
+  /* CODE PAGE */
+  .codeMain{
+    width: 100vw !important;
+    height: 55vh;
+}
+  .codeContainer{
+    height: 77%;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:auto;
+}
+
+.codeContainer p{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 2.5em;
+    line-height: 150%;
+    text-align: center;
+}
+
+.codeDirections{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    margin-top: 2.3%;
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.decorativeImages{
+display: none;
+}
+
+.codeSubhead{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 4.5vw !important;
+  letter-spacing: 0.07em;
+}
+
+  /* PROJECT PAGE */
+  .projectsContainer{
+    height: 90%;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 0;
+    overflow:auto;
+}
+
+.projectsContainer p{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 2.5em;
+    line-height: 150%;
+    text-align: center;
+}
+
+.projectsDirections{
+    font-family: 'Mondwest-Regular' !important;
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    margin-top: 2.3%;
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ABOUT PAGE */
+.aboutMain{
+  width: 90vw;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DCAC93 !important;
+}
+
+.aboutContainer{
+  height: 100%;
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+  padding-right: 0%;
+  overflow:auto;
+}
+
+.aboutHeading{
+  font-family: Pilowlava;
+  font-size: 8.5vw;
+  color: #fff;
+}
+
+.aboutH2{
+  font-family: Pilowlava;
+  font-size: 8.5vw;
+  color: #fff;   
+}
+
+.inquireBody{
+  margin: auto;
+}
+
+.inquireBody a{
+  margin: auto;
+}
+
+.aboutSubhead{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 6vw;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.aboutListShapes-child{
+  display: flex;
+  flex-wrap: wrap !important;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin: 1vh 1vw 1vh 1vw;
+  max-width: 100%;
+  background: #C97D54;
+  border-radius: 100px;
+}
+
+.aboutList{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0 40px 0;
+  padding-inline-start: 0px !important;
+  font-family: 'Mondwest-Regular' !important;
+  letter-spacing: 0.02em;
+  color: #000;
+  list-style-type: none;
+}
+
+.aboutList li:nth-child(even) {
+  margin: 1vh auto 5vh auto;
+}
+
+.aboutList li:nth-child(odd) {
+  margin: 5vh auto 1vh auto;
+}
+
+.aboutList li{
+  margin: auto;
+  text-align: center;
+  max-width: 300px;
+}
+
+.aboutList img{
+  width: 50px;
+  margin: 0 auto 24px auto;
+}
+
+.aboutList img:hover{
+  width: 60px;
+  transition: all 0.2s ease-in;
+}
+
+.aboutKN{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 11vw;
+  color: #fff;
+  margin-top: 5%;
+}
+
+.aboutBody{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 4.5vw;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.thankYou{
+  font-family: Pilowlava;
+  font-size: 8.5vw;
+  color: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.thankYouHeart{
+  display: inline-flex;
+  width: 25px;
+}
+
+/* COMMUNITY PAGE*/
+.communityMain{
+  width: 90vw;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background-color: #DCAC93 !important;
+}
+
+.communityContainer{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  overflow: scroll;
+}
+
+.communityHeading{
+  font-family: Pilowlava;
+  font-size: 8.5vw;
+  color: #fff;
+}
+
+.communitySubhead{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 6vw;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.communityBody{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 4.5vw;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.linktree{
+  list-style-type: none;
+  display: block;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  width: 80vw;
+  border-radius: 40px;
+  border-color: #000000;
+  background-image: url("https://images.unsplash.com/photo-1579167728798-a1cf3d595960?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1026&q=80");
+  border-width: 10px;
+  border-style: solid;
+}
+
+ul.linktree {
+  padding-left: 0% !important;
+}
+
+.linktree li{
+  font-family: helvetica;
+  font-size: 3.5vw;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  width: 215px;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+/* RESUME PAGE */
+.resumeMain{
+  width: 90vw;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background-color: #D8D7E7 !important;
+}
+
+.resumeContainer{
+  height: 100%;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 0%;
+  padding-right: 0%;
+  overflow: scroll;
+}
+
+.resumeHeading{
+  font-family: Pilowlava;
+  font-size: 6.5vw;
+}
+
+.resumeSubhead{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 6vw;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 5% 0% 0% 0%;
+}
+
+.job{
+  font-family: Helvetica;
+  font-size: 3.2vw;
+  font-weight: 400;
+  margin: 3% 0% 1% 0%;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+}
+
+.job p{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 4vw;
+  letter-spacing: 0.02em;
+  line-height: 130%;
+  color: #5d58a5;
+}
+
+/* CONTACT PAGE */
+.contactMain{
+  width: 90vw;
+  height: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17%;
+  background-color: #DCAC93 !important;
+}
+.contactContainer{
+  height: 100%;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 0%;
+  overflow: scroll;
+}
+
+.contactHead{
+  font-family: Pilowlava;
+  font-size: 8.5vw;
+  color: #fff;
+}
+
+.contactSubhead{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 6vw;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.contactSubhead a{
+  font-size: 6vw;
+}
+
+.contactBody{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 4.5vw;
+  letter-spacing: 0.02em;
+  color: #fff;
+  display: none;
+}
+
+.contactBody.credit{
+  display: none;
+}
+
+canvas{
+display: none;
+}
+
+ /* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
+ *::-webkit-scrollbar{
+    display: none;
+}
+
+  *::-webkit-scrollbar-track:vertical {
+    display: none;
+}
+  
+  *::-webkit-scrollbar-thumb:vertical {
+    display: none;
+}
+
+  *::-webkit-scrollbar-track-piece:vertical{
+    display: none;
+}
+
+  *::-webkit-scrollbar-corner:vertical{
+      display: none;
+}
+  
+  *::-webkit-scrollbar-track:horizontal {
+    display: none;
+}
+  
+  *::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+}
+
+  *::-webkit-scrollbar-track-piece:horizontal{
+    display: none;
+}
+
+/* THANK YOU CONFIRMATION */
+.thanksMain{
+  width: 90vw;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17%;
+  background-color: #D6E6EB !important;
+}
+
+.thanksContainer{
+  height: 100%;
+  width: auto;
+  margin-top: 5%;
+  margin-left: 0%;
+  overflow: scroll;
+  padding-right: 0px !important;
+}
+
+.thanksHeading{
+  font-family: Pilowlava;
+  font-size: 8vw;
+  color: #000000;
+}
+
+.thanksSubhead{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 6vw;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.thanksH3{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 1.25em;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 20px 0 0 0;
+}
+
+.caseStudyBody{
+  max-width: 350px;
+  margin: 30px auto auto auto;
+}
+
+.thanksBody{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 4.5vw;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 16px 0 0 0;
+}
+
+.thanksBody a{
+  color: #4E8B9E;
+}
+
+.thanksBody a:hover{
+  color: #00C2FF;
+  transition: ease-in-out 0.2s;
+}
+
+.caseStudyContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 8% 0 0 0;
+  text-align: center;
+}
+
+.caseStudy{
+  max-width: 375px;
+  margin: 40px 0 0 0;
+}
+
+.caseStudy img{
+  max-width: 350px;
+  margin: 32px 0 0 0;
+}
+
+.thanksLink{
+  max-width: 300px;
+  margin: 50px auto 0 auto;
+  background: #CCFF00;
+  border: 1px solid #CCFF00;
+  border-radius: 100px;
+}
+
+.thanksH4{
+  font-family: 'Mondwest-Regular' !important;
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  color: #4E8B9E;
+  margin: 50px;
+}
+
+.thanksH4 a{
+  color: #000000;
+}
+
+.thanksH4 a:hover{
+  color: #C97D54;
+  transition: 0.2s ease-in;
+}
+
+  /* FUN LITTLE PURPLE SCROLLBAR FOR THE LIST OF THINGS I'VE DONE */
+  .thanksContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.thanksContainer::-webkit-scrollbar-track:vertical {
+  display: none;
+}
+  
+  .thanksContainer::-webkit-scrollbar-thumb:vertical {
+    display: none;
+}
+
+  .thanksContainer::-webkit-scrollbar-track-piece:vertical{
+    display: none;
+}
+
+  .thanksContainer::-webkit-scrollbar-corner:vertical{
+      display: none;
+      padding-bottom: 0%;
+}
+  
+  .thanksContainer::-webkit-scrollbar-track:horizontal {
+    display: none;
+    padding: 0%;
+}
+  
+  .thanksContainer::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+    padding: 0%;
+}
+
+  .thanksContainer::-webkit-scrollbar-track-piece:horizontal{
+    display: none;
+    padding: 0%;
+}
+
+/* MOBILE MODAL */
+
+.mobileModal {
+  padding: 50px;
+  margin: auto !important;
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 7%;
+  top: 30%;
+  width: 100%; 
+  overflow: auto;
+}
+
+/* Modal Content/Box */
+.mobileModal.content {
+  font-family: 'Mondwest-Regular' !important;
+  margin: auto;
+  border-radius: 50px;
+  border: #8686ff 1px solid;
+  background: #eef132;
+  display: block;
+  width: 60%;
+  max-width: 300px;
+  text-align: justify;
+}
+
+.modalHeading{
+  font-size: 6vw;
+  margin-bottom: 5%;
+}
+
+.mobileModal.content p{
+  text-transform: lowercase;
+}
+
+/* The Close Button */
+.close {
+  font-family: 'Mondwest-Regular' !important;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+    footer {
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* bottom:0; */
+        position: absolute;
+    }
+
+    .copyright{
+        /* flex: 50%; */
+        width: 29vw;
+        margin: 50% auto 50% auto;
+        padding-bottom: 3%;
+    }
+
+    footer ul{
+        list-style-type: none;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        /* flex-wrap: wrap; */
+    }
+
+    .footerLink a{
+        display: block !important;
+        text-decoration: none !important;
+        color: #ffffff;
+        font-family: Helvetica;
+        margin: 18% 0% 18% 0%;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        text-align: center;
+        transition: all .2s ease-in;
+    }
+  }

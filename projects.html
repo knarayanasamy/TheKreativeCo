@@ -6,165 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <link rel="stylesheet" href="/projects.css">
-    <link rel="fontStyles" href="/fonts.css">
-    <link rel="folder" href="/Fonts">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="icon" href="/Visuals/favicon.ico" type="image/x-icon">
+
+    <script src="lazyLoad.js"></script>
     
     <title>Projects</title>
 </head>
 <body>
     <header>
         <div class="navLinkContainer">
-            <a class="homeLink" href="/index.html">The Kreative Co.</a>
-            <a class="headerLink" href="/community.html">COMMUNITY</a>
-            <a class="headerLink" href="/contact.html">CONTACT</a>
-            <a class="headerLink" href="/about.html">ABOUT</a>
-            <a class="headerLink" href="/resume.html">RESUME</a>
-            <a class="headerLink" href="/code.html">CODE</a>
-            <a class="headerLink" href="/photos.html">PHOTOGRAPHY</a>
-            <a class="headerLink" href="/graphics.html">DESIGN</a>
+            <a class="homeLink" href="/index">The Kreative Co.</a>
+
+            <!-- MOBILE MENU -->
+            <ul class="menu">
+                <li class="list"><a href="#"><img class="mobileMenu" src="/Visuals/MENU999.png"></a>
+                   <ul class="items">
+                    <li class="mobileContact"><a href="/contact">INQUIRE</a></li>
+                      <li><a href="/graphics">DESIGN</a></li>
+                      <!-- <li><a href="/productDesign">PRODUCT</a></li> -->
+                      <li><a href="/photos">PHOTOGRAPHY</a></li>
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/contact">CONTACT</a></li>
+                      <li><a href="/community">COMMUNITY</a></li>
+                   </ul>
+                </li>
+             </ul>
+
+            <!-- DESKTOP MENU -->
+            <a class="inquire" href="/contact">INQUIRE</a>
+            <a class="headerLink" href="/community">COMMUNITY</a>
+            <a class="headerLink" href="/about">ABOUT</a>
+            <!-- <a class="headerLink" href="/resume">RESUME</a> -->
+            <a class="currentLink" href="/projects">PROJECTS</a>
+            <a class="headerLink" href="/photos">PHOTOGRAPHY</a>
+            <!-- <a class="headerLink" href="/productDesign">PRODUCT</a> -->
+            <a class="headerLink" href="/graphics">DESIGN</a>
         </div>
     </header>
 
     <div class="projectsMain">
         <div class="projectsDirections">
-            <span>Click on the projects below to see what I've done for each. Click again to hide images and move on.</span> 
+            <span>Doubleclick on the projects below to see what I've done for each. Click again to hide images and move on.</span> 
         </div>
         <div class="projectsContainer">
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <!-- The Close Button -->
-                    <span class="close">X</span>
-                    <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="modal-image">
-            </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('wisteria');">Wisteria and Ivy</p>
                 <div class="panel" id="wisteria">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/1.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/2.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/3.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/4.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/5.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Etsy Banner_Etsy Banner.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Etsy Icon.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Etsy Logo Spring.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Gold Jar Double 2.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Painted Arch.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Pink Jar 1.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Rose Blush Glitter Arch 2.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/SpringBubble.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Winter Forest Bubble 2 2.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/WisteriaIvyPromoVid.mp4">
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/post_card_Postcard_Front.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/post_card_Postcard_Front.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/post_card_Postcard_Back.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/post_card_Postcard_Back.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/care_Instructions_front_alt.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/care_Instructions_front_alt.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/care_Instructions_Postcard_Back.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/care_Instructions_Postcard_Back.webp"></a>                   
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/business_card_text_Business_Card_Back Text.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/business_card_text_Business_Card_Back Text.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/business_card_text_Business_Card_Front.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/business_card_text_Business_Card_Front.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/transparent_Logo_Text_Icon_White_BG.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/transparent_Logo_Text_Icon_White_BG.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/WisteriaAndIvy_Logo_Text_Trans.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/WisteriaAndIvy_Logo_Text_Trans.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/wisteriaAndIvy_Icon_Green_BG.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/wisteriaAndIvy_Icon_Green_BG.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/new-etsy-banner.png"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/new-etsy-banner.png"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/1.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/1.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/2.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/2.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/3.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/3.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/4.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/4.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/5.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/5.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/Etsy Icon.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Etsy Icon.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/Gold Jar Double 2.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Gold Jar Double 2.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/Painted Arch.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Painted Arch.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/Pink Jar 1.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Pink Jar 1.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/Rose Blush Glitter Arch 2.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Rose Blush Glitter Arch 2.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/SpringBubble.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/SpringBubble.webp"></a>
+                    <a data-fslightbox="wisteria" href="/Assets/PROJECTS/WISTERIAANDIVY/Winter Forest Bubble 2 2.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/Winter Forest Bubble 2 2.webp"></a>
+                    <!-- <img id="smallImg" src="/Assets/PROJECTS/WISTERIAANDIVY/WisteriaIvyPromoVid.mp4"> -->
                 </div>
             </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('bbCr');">Baby Creisy</p>
                 <div class="panel" id="bbCr">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc1.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc10.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc2.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc3.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc4.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc5.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc6.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc7.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc8.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc9.png">
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc1.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc1.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc10.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc10.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc2.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc2.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc3.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc3.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc4.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc4.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc5.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc5.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc6.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc6.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc7.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc7.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc8.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc8.webp"></a>
+                    <a data-fslightbox="bbCr" href="/Assets/PROJECTS/BABY CREISY/bc9.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/BABY CREISY/bc9.webp"></a>
                 </div>
             </div>
             
             <div class="content" id="content">
                 <p onclick="toggleDiv('daiPho');">Daily Photos</p>
                 <div class="panel" id="daiPho">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/16-2286.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/Moon-3.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/3-5625.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/42-4129.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/45-4029.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/6-5770.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/7-8295.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/beb-3-1619561.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/bird-1-1619562.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/bird-2-1619563.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/hot-mulligan-2149546.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img-1806-2979.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0246-1437230.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0270-1437231.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0296-1948571.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0301-1948575.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0302-1948578.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img3-2149545.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img3710-1437232.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img467ruyefd-1600649.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img4736-2-1437233.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img5104-1437235.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img5111-1437236.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img5136-1437238.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6100-1437240.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/17-7388.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6185-1437241.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6189-1437242.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6212-1437243.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6231-1437244.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img7918-1600652.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img8058-1437248.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img8724-1666119.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9146-1694697.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9511-1832510.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9515-1832511.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9550-1832526.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9713-1832509.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9725-1832525.jpg">
-                    <img id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/2-7908.jpg">
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/16-2286.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/16-2286.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/Moon-3.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/Moon-3.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/3-5625.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/3-5625.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/42-4129.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/42-4129.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/45-4029.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/45-4029.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/6-5770.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/6-5770.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/7-8295.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/7-8295.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/beb-3-1619561.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/beb-3-1619561.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/bird-1-1619562.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/bird-1-1619562.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/bird-2-1619563.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/bird-2-1619563.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/hot-mulligan-2149546.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/hot-mulligan-2149546.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img-1806-2979.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img-1806-2979.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img0246-1437230.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0246-1437230.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img0270-1437231.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0270-1437231.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img0296-1948571.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0296-1948571.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img0301-1948575.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0301-1948575.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img0302-1948578.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img0302-1948578.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img3-2149545.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img3-2149545.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img467ruyefd-1600649.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img467ruyefd-1600649.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img5111-1437236.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img5111-1437236.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img5136-1437238.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img5136-1437238.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img6100-1437240.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6100-1437240.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/17-7388.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/17-7388.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img6185-1437241.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6185-1437241.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img6189-1437242.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6189-1437242.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img6212-1437243.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6212-1437243.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img6231-1437244.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img6231-1437244.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img7918-1600652.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img7918-1600652.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img8058-1437248.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img8058-1437248.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img8724-1666119.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img8724-1666119.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img9146-1694697.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9146-1694697.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img9511-1832510.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9511-1832510.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img9515-1832511.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9515-1832511.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img9550-1832526.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9550-1832526.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/img9713-1832509.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/img9713-1832509.webp"></a>
+                    <a data-fslightbox="daily" href="/Assets/PROJECTS/DAILY PHOTOS/2-7908.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/DAILY PHOTOS/2-7908.webp"></a>
                 </div>
             </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('poiAlt');">Poisoned Altar</p>
                 <div class="panel" id="poiAlt">
-                    <img id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa1.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa2.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa3.png">
-                    <img id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa4.png">
+                    <a data-fslightbox="poiAlt" href="/Assets/PROJECTS/POISONED ALTAR/pa1.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa1.webp"></a>
+                    <a data-fslightbox="poiAlt" href="/Assets/PROJECTS/POISONED ALTAR/pa2.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa2.webp"></a>
+                    <a data-fslightbox="poiAlt" href="/Assets/PROJECTS/POISONED ALTAR/pa3.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa3.webp"></a>
+                    <a data-fslightbox="poiAlt" href="/Assets/PROJECTS/POISONED ALTAR/pa4.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/POISONED ALTAR/pa4.webp"></a>
                 </div>
             </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('retouch');">Retouching</p>
                 <div class="panel" id="retouch">
-                    <img src="/Assets/PROJECTS/RETOUCHING/retouch1Crystal.png">
-                    <img src="/Assets/PROJECTS/RETOUCHING/retouch2qilo.png">
-                    <img src="/Assets/PROJECTS/RETOUCHING/retouch3house.png">
-                    <img src="/Assets/PROJECTS/RETOUCHING/retouch4house.png">
-                    <img src="/Assets/PROJECTS/RETOUCHING/retouch5house.png">
+                    <a data-fslightbox="retouch" href="/Assets/PROJECTS/RETOUCHING/retouch1Crystal.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/RETOUCHING/retouch1Crystal.webp"></a>
+                    <a data-fslightbox="retouch" href="/Assets/PROJECTS/RETOUCHING/retouch2qilo.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/RETOUCHING/retouch2qilo.webp"></a>
+                    <a data-fslightbox="retouch" href="/Assets/PROJECTS/RETOUCHING/retouch3house.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/RETOUCHING/retouch3house.webp"></a>
+                    <a data-fslightbox="retouch" href="/Assets/PROJECTS/RETOUCHING/retouch4house.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/RETOUCHING/retouch4house.webp"></a>
+                    <a data-fslightbox="retouch" href="/Assets/PROJECTS/RETOUCHING/retouch5house.webp"><img class="lazy" id="smallImg" src="/Assets/PROJECTS/RETOUCHING/retouch5house.webp"></a>
                 </div>
             </div>
     </div>
 
     <footer>
-        <img class="copyright" src="Visuals/Copyright222.png">
+        <div></div>
+        <a href="/index"><img class="copyright" src="Visuals/Copyright222.webp" alt="copyright image"></a>
     
         <ul>
-            <li class="footerLink"><a href="/about.html">ABOUT</a></li>
-            <li class="footerLink"><a href="/community.html">COMMUNITY</a></li>
-            <li class="footerLink"><a href="/contact.html">CONTACT</a></li>
-            <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/">LINKEDIN</a></li>
-            <li class="footerLink"><a href="/resume.html">RESUME</a></li>
-            <li class="footerLink"><a href="http://wisteriaandivy.com/">SHOP</a></li>
+            <li class="footerLink"><a href="/about">ABOUT</a></li>
+            <li class="footerLink"><a href="/community">COMMUNITY</a></li>
+            <li class="footerLink"><a href="/contact">CONTACT</a></li>
+            <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/" target="_blank">LINKEDIN</a></li>
+            <li class="footerLink"><a href="/resume">RESUME</a></li>
+            <li class="footerLink"><a href="http://wisteriaandivy.com/" target="_blank">SHOP</a></li>
         </ul>
+        <div></div>
     </footer>
 
     <script>
-        // Script that toggles the image galleries to be hidden and shown.
-        function toggleDiv(id) {
+         // Script that toggles the image galleries to be hidden and shown.
+         function toggleDiv(id) {
             var divelement = document.getElementById(id);
-            if(divelement.style.display == 'none')
-                divelement.style.display = 'flex';
-            else
-                divelement.style.display = 'none';
+
+            if (divelement.style.display !== "flex") {
+                divelement.style.display = "flex";
+                } 
+                else {
+                divelement.style.display = "none";
+                }
         }
 
         //SCRIPT TO MAKE THE DIRECTION TEXT SCROLL ACROSS THE TOP OF THE PAGE LIKE A MARQUEE
@@ -182,33 +205,29 @@
         return Math.floor(Math.random() * (max - min + 1)) + min
         }
 
-        //MODAL 
-        var modal = document.getElementById("myModal");
+          // Mobile Menu
+          var list = document.querySelectorAll('.list');
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var modalImg = document.getElementById("modal-image");
+        function accordion(e) {
+        e.stopPropagation();
+        if (this.classList.contains('active')) {
+            this.classList.remove('active');
+        } else
+        if (this.parentElement.parentElement.classList.contains('active')) {
+            this.classList.add('active');
+        } else
+        {
+            for (i = 0; i < list.length; i++) {
+                list[i].classList.remove('active');
 
-        document.addEventListener("click", (e) => {
-        const elem = e.target;
-        if (elem.id==="smallImg") {
-            modal.style.display = "block";
-            modalImg.src = elem.dataset.biggerSrc || elem.src;
-        }
-        })
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
             }
+            this.classList.add('active');
+        }
+        }
+        for (i = 0; i < list.length; i++) {
+        list[i].addEventListener('click', accordion);
         }
     </script>
+    <script src="fslightbox.js"></script>
 </body>
 </html>

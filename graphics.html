@@ -6,22 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/graphics.css">
-    <link rel="fontStyles" href="/fonts.css">
-    <link rel="folder" href="/Fonts">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="icon" href="/Visuals/favicon.ico" type="image/x-icon">
+
+    <script src="lazyLoad.js"></script>
     
     <title>Graphics</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="navLinkContainer">
-            <a class="homeLink" href="/index.html">The Kreative Co.</a>
-            <a class="headerLink" href="/community.html">COMMUNITY</a>
-            <a class="headerLink" href="/contact.html">CONTACT</a>
-            <a class="headerLink" href="/about.html">ABOUT</a>
-            <a class="headerLink" href="/resume.html">RESUME</a>
-            <a class="headerLink" href="/projects.html">PROJECTS</a>
-            <a class="headerLink" href="/code.html">CODE</a>
-            <a class="headerLink" href="/photos.html">PHOTOGRAPHY</a>
+            <a class="homeLink" href="/index">The Kreative Co.</a>
+
+            <!-- MOBILE MENU -->
+            <ul class="menu">
+                <li class="list"><a href="#"><img class="mobileMenu" src="/Visuals/MENU999.png" alt="mobile menu button"></a>
+                   <ul class="items">
+                    <li class="mobileContact"><a href="/contact">INQUIRE</a></li>
+                      <li><a href="/graphics">DESIGN</a></li>
+                      <!-- <li><a href="/productDesign">PRODUCT</a></li> -->
+                      <li><a href="/photos">PHOTOGRAPHY</a></li>
+                      <!-- <li><a href="/code">CODE</a></li> -->
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/community">COMMUNITY</a></li>
+                   </ul>
+                </li>
+             </ul>
+
+            <!-- DESKTOP MENU -->
+            <a class="inquire" href="/contact">INQUIRE</a>
+            <a class="headerLink" href="/community">COMMUNITY</a>
+            <a class="headerLink" href="/about">ABOUT</a>
+            <!-- <a class="headerLink" href="/resume">RESUME</a> -->
+            <a class="headerLink" href="/projects">PROJECTS</a>
+            <a class="headerLink" href="/photos">PHOTOGRAPHY</a>
+            <!-- <a class="headerLink" href="/productDesign">PRODUCT</a> -->
+            <a class="currentLink" href="/graphics">DESIGN</a>
         </div>
     </header>
 
@@ -31,150 +53,313 @@
         </div>
         <div class="graphicsContainer">
                    
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">X</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="modal-image">
-                    </div>
+            <div class="content" id="content">
+                <p onclick="toggleDiv('noted');">Noted Collective</p>
+                <div class="panel" id="noted">
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/homePageCloseUp.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/homePageCloseUp.webp" alt="Noted Collective home page close up featuring a video of Kaia Gerber shot and produced by Noted Collective."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/Home.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/Home.webp" alt="Noted Collective home page full view."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/work.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/work.webp" alt="Noted Collective work page. Links to Fashion & Beauty, Editorial, Casting, Motion, and Commercial shoots all produced and/or shot by Noted Collective."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/hover.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/hover.webp" alt="Noted Collective dropdown menu example"></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/editorialPageExample.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/editorialPageExample.webp" alt="Noted Collective editorial project page featuring a recent shoot with Georgia May Jagger shot and produced by Noted Collective."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/modal.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/modal.webp" alt="Noted Collective modal example featuring shoot with Georgia May Jagger for Love Want Magazine."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/dropdown.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/dropdown.webp" alt="Noted Collective dropdown menu example"></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/motionPage.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/motionPage.webp" alt="Noted Collective motion page example featuring two videos for Bomb Pop shot and produced by Noted Collective."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/aboutPage.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/aboutPage.webp" alt="Noted Collective about page."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/contactPage.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/contactPage.webp" alt="Noted Collective contact page."></a>
+                    <a data-fslightbox="noted" href="/Assets/PRODDESIGN/notedCollective/BRANDING.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/notedCollective/BRANDING.webp" alt="Noted Collective branding behind the scenes in Figma."></a>
+                    <a data-fslightbox="noted" href="/Assets/PRODDESIGN/notedCollective/brandingNotes.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/notedCollective/brandingNotes.webp" alt="Noted Collective branding notes behind the scenes in Figma."></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/letterhead4.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/letterhead4.webp" alt="Noted Collective letterhead using new stacked logo"></a>
+                    <a data-fslightbox="noted" href="/Assets/NOTEDCO/NotionNoted.webp"><img class="lazy" id="smallImg" src="/Assets/NOTEDCO/NotionNoted.webp" alt="Noted Collective Notion Deliverables"></a>
+
+                </div>
+            </div>
+    
+            <div class="content" id="content">
+                <p onclick="toggleDiv('santulan');">Santulan Creative</p>
+                <div class="panel" id="santulan">
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/Santulan-Creative-Branding-Guide-Cover.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/Santulan-Creative-Branding-Guide-Cover.webp" alt="Santulan Creative branding guidelines cover"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/SANTULANCREATIVEDESIGNGUIDELINES.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/SANTULANCREATIVEDESIGNGUIDELINES.webp" alt="Santulan Creative design guidelines"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/SOCIALDESIGNGUIDELINES.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/SOCIALDESIGNGUIDELINES.webp" alt="Santulan Creative social media design guidelines"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/USEFULINFORMATION.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/USEFULINFORMATION.webp" alt="santulan creative design guidelines useful info"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative//SantulanBrandGuideTypeSettings.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/SantulanBrandGuideTypeSettings.webp" alt="Santulan Creative branding guide type settings"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/Home.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/Home.webp" alt="Santulan Creative website homepage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/santulanMagazine.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/santulanMagazine.webp" alt="Santulan Creative Santulan Magazine webpage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/joinus.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/joinus.webp" alt="Santulan Creative join us webpage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/services.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/services.webp" alt="Santulan Creative services webpage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/extras.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/extras.webp" alt="Santulan Creative extras webpage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/faq.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/faq.webp" alt="Santulan Creative FAQ webpage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/PRODDESIGN/santulanCreative/packages.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/santulanCreative/packages.webp" alt="Santulan Creative Packages webpage"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/OctoberEventGuide.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/OctoberEventGuide.webp" alt="Santulan Creative October Event Guide"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/oeg2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/oeg2.webp" alt="Santulan Creative October Event Guide"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/oeg3.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/oeg3.webp" alt="Santulan Creative October Event Guide"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/NovemberEventGuide1CoverV2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/NovemberEventGuide1CoverV2.webp" alt="Santulan Creative November Event Guide"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/NovemberEventGuide2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/NovemberEventGuide2.webp" alt="Santulan Creative November Event Guide"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/Boldjourneyigpost1.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/Boldjourneyigpost1.webp" alt="Santulan Creative Bold Journey interview for Instagram"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/Boldjourneyigpost2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/Boldjourneyigpost2.webp" alt="Santulan Creative Bold Journey interview for Instagram"></a>                    
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/Boldjourneyigpost3.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/Boldjourneyigpost3.webp" alt="Santulan Creative Bold Journey interview for Instagram"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/riseOfNonAcBevviesFinal.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/riseOfNonAcBevviesFinal.webp" alt="Santulan Magazine Issue 02 All About Consumption rise of non-alcoholic beverages"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/ClimateWeekInstagramPost1.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/ClimateWeekInstagramPost1.webp" alt="Santulan Creative Climate Week Event Guide for Instagram"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/ClimateWeekInstagramPost2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/ClimateWeekInstagramPost2.webp" alt="Santulan Creative Climate Week Event Guide for Instagram"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/ClimateWeekInstagramPost3.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/ClimateWeekInstagramPost3.webp" alt="Santulan Creative Climate Week Event Guide for Instagram"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/ClimateWeekInstagramPost4.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/ClimateWeekInstagramPost4.webp" alt="Santulan Creative Climate Week Event Guide for Instagram"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/cover02.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/cover02.webp" alt="Santulan Magazine Issue 02 All About Consumption cover featuring Kia Damon @kiacooks"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread1.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread1.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread2.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread3.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread3.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread4.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread4.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread5.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread5.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread6.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread6.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread7.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread7.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread8.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread8.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread9.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread9.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread10.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread10.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread11.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread11.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread12.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread12.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread13.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread13.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread14.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread14.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread15.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread15.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread16.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread16.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread17.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread17.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread18.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread18.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread19.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread19.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread20.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread20.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread21.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread21.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread22.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread22.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread23.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread23.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread24.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread24.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread25.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread25.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread26.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread26.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/aacspread27.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/aacspread27.webp" alt="Santulan Magazine Issue 02 All About Consumption"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/palestinecrisis01.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/palestinecrisis01.webp" alt="Red background with white text stating"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/palestinecrisis02.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/palestinecrisis02.webp" alt="Red background with white text stating"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/palestinecrisis03.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/palestinecrisis03.webp" alt="Red background with white text stating"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/palestinecrisis04.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/palestinecrisis04.webp" alt="Red background with white text stating"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/AllAboutConsumptionMenu01.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/AllAboutConsumptionMenu01.webp" alt="Santulan Magazine Issue 02 All About Consumption launch drink menu"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/allAboutConsumptionLaunch2.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/allAboutConsumptionLaunch2.webp" alt="Santulan Magazine Issue 02 All About Consumption launch email invite"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/santulanSounds.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/santulanSounds.webp" alt="Santulan Magazine Issue 02 All About Consumption santulan sounds Instagram post"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/charmMotionSmall(2).gif"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/charmMotionSmall(2).gif" alt="Santulan Magazine x Wisteria and Ivy All About Consumption pre-order charm promo"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/cover.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/cover.webp" alt="Santulan Magazine All About Love Issue 01 cover featuring Tkay Maidza"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/threeDaysStory.gif"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/3daysStory_v2.gif" alt="Instagram story or reel featuring a black and white photo of Tkay Maidza and text stating three days until the launch of Santulan Magazine Issue 01 All About Love"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/instaIssue1.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/instaIssue1.webp" alt="Santulan Magazine All About Love Issue 01"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/magLaunchDrinksFK.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/magLaunchDrinksFK.webp" alt="Santulan Magazine All About Love Issue 01 launch party drink french kiss"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/santulanSoundsPost.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/santulanSoundsPost.webp" alt="Santulan Magazine Issue 01 All About Love Santulan Sounds Instagram post red hearts and text"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/santulanSoundsStory.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/santulanSoundsStory.webp" alt="Santulan Magazine Issue 01 All About Love Santulan Sounds Instagram story red hearts and text"></a>
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/signageFlashTattoos.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/signageFlashTattoos.webp" alt="Santulan Creative Pyaar Party signage flash tattoos"></a>
+                    <a data-fslightbox="santulan" href=""><img class="lazy" id="smallImg" src="/Assets/SANTULAN/signagePolaroids.webp" alt="Santulan Creative Pyaar Party signage polaroids"></a> -->
+                    <a data-fslightbox="santulan" href="/Assets/SANTULAN/eventFlyer.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/eventFlyer.webp" alt="Santulan Creative Pyaar Party event flier hands in shape of a heart featuring dj names"></a>
+                </div>
+            </div>
 
             <div class="content" id="content">
-                <p onclick="toggleDiv('contFree');">Contact & Freelance</p>
-                <div class="panel" id="contFree">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/1-7757.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/2-2-9572.gif">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/3-6257.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/4-9968.gif">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/conjure-hero-graphics-02-9275.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/fisk-menu-01-3179.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/products-services-page-2536.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/glow-recipe-email-mocks-01-5756.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/glow-recipe-email-mocks-03-4727.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/velvetCaviar.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/newsletterMock1.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/newsletterMock2.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/newsletterMock3.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/tireAgent.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Structured Emails-01.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Structured Emails-02.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Alexander Project-01.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Alexander Project-05.png">
-                    <img id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Alexander Project-07.png">
+                <p onclick="toggleDiv('theRidge');">The Ridge</p>
+                <div class="panel" id="theRidge">
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/carbonWallets.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/carbonWallets.webp" alt="The Ridge Wallet Carbon Wallet Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/dealDropAirTag.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/dealDropAirTag.webp" alt="The Ridge Wallet Air Tag for iPhone Deal Drop Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/evergreenBagPurch.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/evergreenBagPurch.webp" alt="The Ridge Wallet Bag Accessory Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/fathersDayKeycase.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/fathersDayKeycase.webp" alt="The Ridge Wallet Fathers Day Keycase Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/fathersDayPen.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/fathersDayPen.webp" alt="The Ridge Wallet Fathers Day Pen Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/fathersDayPremium.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/fathersDayPremium.webp" alt="The Ridge Wallet Fathers Day Premium and Forged Wallet Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/fathersDayRealtree.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/fathersDayRealtree.webp" alt="The Ridge Wallet Fathers Day Realtree Feature Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/fathersLastChance.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/fathersLastChance.webp" alt="The Ridge Wallet Fathers Day Sale Last Chance Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/followOnSocial.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/followOnSocial.webp" alt="The Ridge Wallet Follow Us on Instagram TikTok Twitter Social Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/nPWWinner.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/nPWWinner.webp" alt="The Ridge Wallet National Parks Week Giveaway Winner Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/whereWillItTakeYou.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/whereWillItTakeYou.webp" alt="The Ridge Wallet Where Will Your Wallet Take You International Email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail1.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail1.webp" alt="The Ridge Wallet smart wallet air tag case promotion combo email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail2.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail2.webp" alt="The Ridge Wallet national parks week giveaway annoucement email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail4.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail4.webp" alt="The Ridge Wallet free carbon case for airtag promotion email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail6.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail6.webp" alt="The Ridge Wallet pen promotion email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail8.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail8.webp" alt="The Ridge Wallet father's day promotion email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail9.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail9.webp" alt="The Ridge Wallet father's day graduation gift amazon promotion email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail10.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail10.webp" alt="The Ridge Wallet front pocket wallet introduction email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail11.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail11.webp" alt="The Ridge Wallet and product(red) the ridge red wallet drop email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail12.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail12.webp" alt="The Ridge Wallet carbon fiber collection email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail13.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail13.webp" alt="The Ridge Wallet national parks week giveaway email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail15.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail15.webp" alt="The Ridge Wallet case for airtag kit email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail16.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail16.webp" alt="The Ridge Wallet front pocket wallet email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail18.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail18.webp" alt="The Ridge Wallet new customers introduction klaviyo email template"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail19.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail19.webp" alt="The Ridge Wallet and Manscaped april fools ridgescaped trimmer clippers email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail21.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail21.webp" alt="The Ridge Wallet anniversary sale ending email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail22.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail22.webp" alt="The Ridge Wallet percentage off klaviyo email template"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail24.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail24.webp" alt="The Ridge Wallet black damascus sale email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail25.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail25.webp" alt="The Ridge Wallet keycase new color drop email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail32.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail32.webp" alt="The Ridge Wallet and Manscaped april fools ridgescaped trimmer clippers email draft mockup"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail33.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail33.webp" alt="The Ridge Wallet anniversary sale thank you email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail34.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail34.webp" alt="The Ridge Wallet carbon case for airtag restock email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail35.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail35.webp" alt="The Ridge Wallet packable backpack klaviyo email template"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeemail36.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeemail36.webp" alt="The Ridge Wallet and RealTree collaboration wallet email"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/blueEmberGraphic.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/blueEmberGraphic.webp" alt="The Ridge Wallet blue ember wallet specs email graphic"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/clipperGraphic.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/clipperGraphic.webp" alt="The Ridge Wallet april fools day manscaped clipper graphic"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/locationMotion.gif"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/locationMotion.gif" alt="The Ridge Wallet wild topographic series graphic"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/qualityIsKeyMotion.gif"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/qualityIsKeyMotion.gif" alt="The Ridge Wallet forged ember keycase email header graphic"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/silverDamascusGraphic.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/silverDamascusGraphic.webp" alt="The Ridge Wallet silver damascus specs email graphic"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/upToOffMotion.gif"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/upToOffMotion.gif" alt="The Ridge Wallet percentage off promo coupon code email motion graphic"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/essentialKitPromoGraphic.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/essentialKitPromoGraphic.webp" alt="The Ridge Wallet essential kit promotion graphic popup"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/fifteenOffPopup.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/fifteenOffPopup.webp" alt="The Ridge Wallet fifteen percent off promo coupon code"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeFifteenPopup.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeFifteenPopup.webp" alt="The Ridge Wallet fifteen percent off promo coupon code"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/ridgeFifteenPopupTwo.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/ridgeFifteenPopupTwo.webp" alt="The Ridge Wallet fifteen percent off promo coupon code"></a>
+                    <a data-fslightbox="ridge" href="/Assets/RIDGEDESIGN/walletComparisonHP.webp"><img class="lazy" id="smallImg" src="/Assets/RIDGEDESIGN/walletComparisonHP.webp" alt="The Ridge Wallet comparison shot"></a>
                 </div>
             </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('MixCC');">Mixology Clothing Co.</p>
                 <div class="panel" id="MixCC">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/backIn1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/bfs1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/checkPlsEmail1.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/codedEmail1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/cozyAnimation.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/cozyEmail1.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/Cyber1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/detailsEmail1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/emailAdOn1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/fallAnimation1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/fallEmail2.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/fallEmailOne.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/forecast1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/giftEmail1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/inTheMix1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/layered1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/mdw1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/newAnimation1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/newEmail1.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/newEmail2.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/saleAnimation1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/saleAnimation2.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/shopLocal1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/summerEmail1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/summerGraphic1.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/tiedye1.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/Wrap-Up-Sale-Gif-Web.gif">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/winterEmail1.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/trending.jpeg">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/oct_13_free_shipping-01.png">
-                    <img id="smallImg" src="/Assets/MIXDESIGN/taste???-09.png">
-                </div>
+                    <a data-fslightbox="mixology" href="/Assets/PRODDESIGN/mixologyClothing/mix-brand-guide-1.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/mixologyClothing/mix-brand-guide-1.webp" alt="mixology clothing company brand guide"></a>
+                    <a data-fslightbox="mixology" href="/Assets/PRODDESIGN/mixologyClothing/mix-brand-guide-2.webp"><img class="lazy" id="smallImg" src="/Assets/PRODDESIGN/mixologyClothing/mix-brand-guide-2.webp" alt="mixology clothing company brand guide"></a>
+                    <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/Wrap-Up-Sale-Gif-Web.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/Wrap-Up-Sale-Gif-Web.gif" alt="mixology clothing company 2020 wrap up sale motion graphic"></a>
+                    <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/decemberdropemail.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/decemberdropemail.webp" alt="mixology clothing company december drop email"></a>
+                    <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/homefortheholidaysemail.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/homefortheholidaysemail.webp" alt="mixology clothing company home for the holidays email"></a>
+                    <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/luxesweateremail.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/luxesweateremail.webp" alt="mixology clothing company luxe sweater details email"></a>
+                    <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/bfs1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/bfs1.gif" alt="mixology clothing company black friday sale"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/NovemberMustHavesEmail.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/NovemberMustHavesEmail.webp" alt="mixology clothing company november must haves email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/OurGifttoYou.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/OurGifttoYou.webp" alt="mixology clothing company our gift to you email header"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/thedecemberedit.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/thedecemberedit.webp" alt="mixology clothing company december edit email">
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/checkPlsEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/checkPlsEmail1.webp" alt="mixology clothing company email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/backIn1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/backIn1.webp" alt="mixology clothing company back in stock"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/codedEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/codedEmail1.webp" alt="mixology clothing company coded email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/cozyAnimation.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/cozyAnimation.gif" alt="mixology clothing company cozy animation"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/cozyEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/cozyEmail1.webp" alt="mixology clothing company cozy email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/theGiftThatAlwaysFits.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/theGiftThatAlwaysFits.gif" alt="mixology clothing company the gift that always fits gift card banner"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/WrapUp2020Sale.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/WrapUp2020Sale.webp" alt="mixology clothing company 2020 wrap up sale email banner"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/Cyber1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/Cyber1.webp" alt="mixology clothing company cyber monday"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/detailsEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/detailsEmail1.webp" alt="mixology clothing company clothing details email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/emailAdOn1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/emailAdOn1.webp" alt="mixology clothing company email adon"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/fallAnimation1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/fallAnimation1.gif" alt="mixology clothing company fall animation"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/fallEmail2.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/fallEmail2.webp" alt="mixology clothing company fall email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/fallEmailOne.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/fallEmailOne.webp" alt="mixology clothing company fall email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/forecast1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/forecast1.gif" alt="mixology clothing company style forecast gif"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/giftEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/giftEmail1.webp" alt="mixology clothing company gifting email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/inTheMix1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/inTheMix1.webp" alt="mixology clothing company in the mix email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/layered1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/layered1.webp" alt="mixology clothing company layered"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/mdw1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/mdw1.gif"  alt="mixology clothing company memorial day sale motion graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/newAnimation1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/newAnimation1.gif"  alt="mixology clothing company new arrivals motion graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/newEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/newEmail1.webp"  alt="mixology clothing company new arrivals email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/newEmail2.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/newEmail2.webp" alt="mixology clothing company new arrivals email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/saleAnimation1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/saleAnimation1.gif" alt="mixology clothing company sale motion graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/saleAnimation2.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/saleAnimation2.gif" alt="mixology clothing company sale motion graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/shopLocal1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/shopLocal1.webp" alt="mixology clothing company shop local long island"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/summerEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/summerEmail1.webp" alt="mixology clothing company summer email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/summerGraphic1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/summerGraphic1.webp" alt="mixology clothing company summer graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/tiedye1.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/tiedye1.gif" alt="mixology clothing company tie dye motion graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/winterEmail1.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/winterEmail1.webp" alt="mixology clothing company winter email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/trending.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/trending.webp" alt="mixology clothing company tranding editorial graphic"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/oct_13_free_shipping-01.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/oct_13_free_shipping-01.webp" alt="mixology clothing company our gift to you email"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/readyforataste.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/readyforataste.webp" alt="mixology clothing company ready for a taste"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/sweaterFromMondaytoSunday.webp"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/sweaterFromMondaytoSunday.webp" alt="mixology clothing company sweats email header"></a>
+                   <a data-fslightbox="mixology" href="/Assets/MIXDESIGN/shippingsOnUs.gif"><img class="lazy" id="smallImg" src="/Assets/MIXDESIGN/shippingsOnUs.gif" alt="mixology clothing company free shipping email header"></a>
+                   </div>
             </div>
 
             <div class="content" id="content">
-                <p onclick="toggleDiv('BAB');">Better Almond Butter</p>
-                <div class="panel" id="BAB">
-                    <img id="smallImg" src="/Assets/BETTERALMONDDESIGN/ebAnimation1.gif">
-                    <img id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign1.png">
-                    <img id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign2.png">
-                    <img id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign3.png">
-                    <img id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign4.png">
-                </div>
-            </div>
-
-            <div class="content" id="content">
-                <p onclick="toggleDiv('qilo');">Qilo NYC</p>
-                <div class="panel" id="qilo">
-                    <img id="smallImg" src="/Assets/QILODESIGN/fw1.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/qiloap.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/retouch1.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/sale1.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/sale2.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/sale3.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/sale4.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/tee1.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/tee2.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/tee3.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/tee4.png">
-                    <img id="smallImg" src="/Assets/QILODESIGN/tee5.png">
-                </div>
-            </div>
-
-            <div class="content" id="content">
-                <p onclick="toggleDiv('package');">Packaging Design</p>
-                <div class="panel" id="package">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/cosmetics-packaging-4-1944398.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-header-1944399.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-logo-variations-02-1944400.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-logo-variations-09-1944401.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-1-1944402.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-2-1944403.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-3-1944404.png">
-                    <img id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-5-1944405.png">
+                <p onclick="toggleDiv('contFree');">Small Projects</p>
+                <div class="panel" id="contFree">
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/1-7757.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/1-7757.webp" alt="conjure insta graphic"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/2-2-9572.gif"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/2-2-9572.gif" alt="conjure insta graphic"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/3-6257.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/3-6257.webp" alt="conjure insta graphic"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/4-9968.gif"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/4-9968.gif" alt="conjure insta graphic"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/conjure-hero-graphics-02-9275.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/conjure-hero-graphics-02-9275.webp" alt="conjure hero graphic"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/fisk-menu-01-3179.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/fisk-menu-01-3179.webp" alt="fisk food menu"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/products-services-page-2536.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/products-services-page-2536.webp" alt="fisk website mock"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/glow-recipe-email-mocks-01-5756.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/glow-recipe-email-mocks-01-5756.webp" alt="glow recipe email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/glow-recipe-email-mocks-03-4727.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/glow-recipe-email-mocks-03-4727.webp" alt="glow recipe email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/Structured Emails-01.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Structured Emails-01.webp" alt="structured agency hydrant email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/Structured Emails-02.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Structured Emails-02.webp" alt="structured agency hydrant email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/Structured Emails Contract_HEADER TWO 2_7.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Structured Emails Contract_HEADER TWO 2_7.webp" alt="structured agency hydrant email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/juneShine.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/juneShine.webp" alt="structured agency JuneShine email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/JuneShine2.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/JuneShine2.webp" alt="structured agency JuneShine email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/Alexander Project-01.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Alexander Project-01.webp" alt="alexander project"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/Alexander Project-05.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Alexander Project-05.webp" alt="alexander project"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/Alexander Project-07.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/Alexander Project-07.webp" alt="alexander project"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/velvetCaviar.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/velvetCaviar.webp" alt="velvet caviar email"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/newsletterMock1.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/newsletterMock1.webp" alt="newsletter mockup"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/newsletterMock2.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/newsletterMock2.webp" alt="newsletter mockup"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/newsletterMock3.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/newsletterMock3.webp" alt="newsletter mockup"></a>
+                    <a data-fslightbox="smallProjects" href="/Assets/CONTRACTANDFREELANCE/tireAgent.webp"><img class="lazy" id="smallImg" src="/Assets/CONTRACTANDFREELANCE/tireAgent.webp" alt="tire agent website mockup prototype"></a>
                 </div>
             </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('printD');">Print Design</p>
                 <div class="panel" id="printD">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock1.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock2.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock3.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock4.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock5.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock6.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock7.png">
-                    <img id="smallImg" src="/Assets/PRINTDESIGN/magMock8.png">
+                    <!-- NOTE: make sure to link the magazine to the actual purchase page & mention that they have to buy to read the full thing -->
+                    <!-- <img id="smallImg" src="/Assets/SANTULAN/allAboutLoveCondensed.pdf" alt="Santulan Magazine All About Love Issue 01 condensed version shows only selected highlights"> -->
+                    <a data-fslightbox="print" href="/Assets/SANTULAN/cover02.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/cover02.webp" alt="Santulan Magazine All About Consumption Issue 02 cover"></a> 
+                    <a data-fslightbox="print" href="/Assets/SANTULAN/cover.webp"><img class="lazy" id="smallImg" src="/Assets/SANTULAN/cover.webp" alt="Santulan Magazine All About Love Issue 01 cover"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/Cover.png"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/Cover.png" alt="First Presbyterian Church Brooklyn Beloved Community brochure cover"></a>
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/innerSpread1.png"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/innerSpread1.png" alt="First Presbyterian Church Brooklyn Beloved Community brochure inner spread pages 1 and 2"></a>
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/innerSpread2.png"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/innerSpread2.png" alt="First Presbyterian Church Brooklyn Beloved Community brochure inner spread pages 3 and 4"></a>
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/backCover.png"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/backCover.png" alt="First Presbyterian Church Brooklyn Beloved Community brochure back cover"></a>
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock1.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock1.webp" alt="adobe indesign witchery magazine cover"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock2.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock2.webp" alt="adobe indesign magazine page"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock3.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock3.webp" alt="adobe indesign moma ad"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock4.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock4.webp" alt="adobe indesign magazine page mockup"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock5.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock5.webp" alt="adobe indesign witchery magazine cover"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock6.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock6.webp" alt="adobe indesign magazine page mockup"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock7.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock7.webp" alt="adobe indesign minimal magazine cover mockup"></a> 
+                    <a data-fslightbox="print" href="/Assets/PRINTDESIGN/magMock8.webp"><img class="lazy" id="smallImg" src="/Assets/PRINTDESIGN/magMock8.webp" alt="adobe indesign minimal magazine page mockup"></a> 
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <p onclick="toggleDiv('BAB');">Better Almond Butter</p>
+                <div class="panel" id="BAB">
+                    <a data-fslightbox="bab" href="/Assets/BETTERALMONDDESIGN/ebAnimation1.gif"><img class="lazy" id="smallImg" src="/Assets/BETTERALMONDDESIGN/ebAnimation1.gif" alt="Better Almond Butter The Better Mrkt Hero Animation"></a>
+                    <a data-fslightbox="bab" href="/Assets/BETTERALMONDDESIGN/webDesign1.webp"><img class="lazy" id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign1.webp" alt="Better Almond Butter The Better Mrkt Web Design"></a>
+                    <a data-fslightbox="bab" href="/Assets/BETTERALMONDDESIGN/webDesign2.webp"><img class="lazy" id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign2.webp" alt="Better Almond Butter The Better Mrkt Web Design"></a>
+                    <a data-fslightbox="bab" href="/Assets/BETTERALMONDDESIGN/webDesign3.webp"><img class="lazy" id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign3.webp" alt="Better Almond Butter The Better Mrkt Web Design"></a>
+                    <a data-fslightbox="bab" href="/Assets/BETTERALMONDDESIGN/webDesign4.webp"><img class="lazy" id="smallImg" src="/Assets/BETTERALMONDDESIGN/webDesign4.webp" alt="Better Almond Butter The Better Mrkt Web Design"></a>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <p onclick="toggleDiv('qilo');">Qilo NYC</p>
+                <div class="panel" id="qilo">
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/fw1.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/fw1.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/qiloap.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/qiloap.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/retouch1.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/retouch1.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/sale1.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/sale1.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/sale2.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/sale2.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/sale3.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/sale3.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/sale4.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/sale4.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/tee1.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/tee1.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/tee2.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/tee2.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/tee3.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/tee3.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/tee4.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/tee4.webp" alt="qilo nyc design summer 2017"></a>
+                    <a data-fslightbox="qilo" href="/Assets/QILODESIGN/tee5.webp"><img class="lazy" id="smallImg" src="/Assets/QILODESIGN/tee5.webp" alt="qilo nyc design summer 2017"></a>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <p onclick="toggleDiv('package');">Packaging Design</p>
+                <div class="panel" id="package">
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/cosmetics-packaging-4-1944398.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/cosmetics-packaging-4-1944398.webp" alt="cosmetics packaging design"></a>
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-header-1944399.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-header-1944399.webp" alt="gillys cosmetics header"></a> 
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-logo-variations-02-1944400.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-logo-variations-02-1944400.webp" alt="gillys cosmetics logo variation"></a> 
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-logo-variations-09-1944401.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-logo-variations-09-1944401.webp" alt="gillys cosmetics logo variation"></a> 
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-packaging-1-1944402.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-1-1944402.webp" alt="gillys cosmetics product packaging"></a> 
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-packaging-2-1944403.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-2-1944403.webp" alt="gillys cosmetics product packaging"></a> 
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-packaging-3-1944404.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-3-1944404.webp" alt="gillys cosmetics product packaging"></a> 
+                    <a data-fslightbox="package" href="/Assets/PACKAGINGDESIGN/gillys-packaging-5-1944405.webp"><img class="lazy" id="smallImg" src="/Assets/PACKAGINGDESIGN/gillys-packaging-5-1944405.webp" alt="gillys cosmetics product packaging"></a> 
                 </div>
             </div>
 
             <div class="content" id="content">
                 <p onclick="toggleDiv('prototypes');">Prototypes</p>
                 <div class="panel" id="prototypes">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/customerCare.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/customerCareMobile.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/elite.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/eliteMobile.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/locations.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/locationsMobile.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/PressMockup.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/pressMobile.jpg">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/Pressarticle.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/pressMobileArticle.jpg">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/productPage.jpg">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/shopByDesigner.png">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/storeSanitation.jpg">
-                    <img id="smallImg" src="/Assets/PROTOTYPES/storeSanitationMobile.jpg">
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/customerCare.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/customerCare.webp" alt="mixology clothing company customer care page"></a> 
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/customerCareMobile.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/customerCareMobile.webp" alt="mixology clothing company customer care mobile mockup"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/elite.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/elite.webp" alt="mixology clothing company elite page"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/eliteMobile.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/eliteMobile.webp" alt="mixology clothing company elite mobile mockup"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/locations.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/locations.webp" alt="mixology clothing company locations"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/locationsMobile.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/locationsMobile.webp" alt="mixology clothing company locations mobile mockup"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/PressMockup.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/PressMockup.webp" alt="mixology clothing company press page"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/pressMobile.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/pressMobile.webp" alt="mixology clothing company press page mobile mockup"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/Pressarticle.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/Pressarticle.webp" alt="mixology clothing company press article"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/pressMobileArticle.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/pressMobileArticle.webp" alt="mixology clothing company press article mobile mockup"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/productPage.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/productPage.webp" alt="mixology clothing company products"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/shopByDesigner.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/shopByDesigner.webp" alt="mixology clothing company shop by designer"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/storeSanitation.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/storeSanitation.webp" alt="mixology clothing company store sanitation"></a>
+                    <a data-fslightbox="proto" href="/Assets/PROTOTYPES/storeSanitationMobile.webp"><img class="lazy" id="smallImg" src="/Assets/PROTOTYPES/storeSanitationMobile.webp" alt="mixology clothing company store sanitation mobile mockup"></a>
                 </div>
             </div>
             
@@ -182,72 +367,74 @@
     </section>
 
     <footer>
-        <img class="copyright" src="Visuals/Copyright222.png">
+        <div></div>
+        <a href="/index"><img class="copyright" src="Visuals/Copyright222.webp" alt="copyright image"></a>
     
         <ul>
-            <li class="footerLink"><a href="/about.html">ABOUT</a></li>
-            <li class="footerLink"><a href="/community.html">COMMUNITY</a></li>
-            <li class="footerLink"><a href="/contact.html">CONTACT</a></li>
+            <li class="footerLink"><a href="/about">ABOUT</a></li>
+            <li class="footerLink"><a href="/community">COMMUNITY</a></li>
+            <li class="footerLink"><a href="/contact">CONTACT</a></li>
             <li class="footerLink"><a href="https://www.linkedin.com/in/kerishmanara/" target="_blank">LINKEDIN</a></li>
-            <li class="footerLink"><a href="/resume.html">RESUME</a></li>
+            <li class="footerLink"><a href="/resume">RESUME</a></li>
             <li class="footerLink"><a href="http://wisteriaandivy.com/" target="_blank">SHOP</a></li>
         </ul>
+        <div></div>
     </footer>
 
     <script>
         // Script that toggles the image galleries to be hidden and shown.
         function toggleDiv(id) {
             var divelement = document.getElementById(id);
-            if(divelement.style.display == 'none')
-                divelement.style.display = 'flex';
-            else
-                divelement.style.display = 'none';
+
+            if (divelement.style.display !== "flex") {
+                divelement.style.display = "flex";
+                } 
+                else {
+                divelement.style.display = "none";
+                }
         }
+
 
         //SCRIPT TO MAKE THE DIRECTION TEXT SCROLL ACROSS THE TOP OF THE PAGE LIKE A MARQUEE
-        function makeMarquee() {
-            const title = "Click on the projects below to see what I've done for each. Click again to hide images and move on.";
-  
-            const marqueeText = new Array(50).fill(title).join('  ')
-            const marquee = document.querySelector('.graphicDirections span')
-            marquee.innerHTML = marqueeText
-            }
+            function makeMarquee() {
+                const title = "Click on the projects below to see what I've done for each. Click again to hide images and move on.";
+    
+                const marqueeText = new Array(50).fill(title).join('  ')
+                const marquee = document.querySelector('.graphicDirections span')
+                marquee.innerHTML = marqueeText
+                }
 
         //CALLING THE MARQUEE METHOD
-        makeMarquee()
-        function random(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min
-        }
-
-
-        //MODAL 
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var modalImg = document.getElementById("modal-image");
-
-        document.addEventListener("click", (e) => {
-        const elem = e.target;
-        if (elem.id==="smallImg") {
-            modal.style.display = "block";
-            modalImg.src = elem.dataset.biggerSrc || elem.src;
-        }
-        })
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            makeMarquee()
+            function random(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
             }
-        }
 
+        // Mobile Menu
+            var list = document.querySelectorAll('.list');
+
+            function accordion(e) {
+            e.stopPropagation();
+            if (this.classList.contains('active')) {
+                this.classList.remove('active');
+            } else
+            if (this.parentElement.parentElement.classList.contains('active')) {
+                this.classList.add('active');
+            } else
+            {
+                for (i = 0; i < list.length; i++) {
+                    list[i].classList.remove('active');
+            
+                }
+                this.classList.add('active');
+            }
+            }
+            for (i = 0; i < list.length; i++) {
+                list[i].addEventListener('click', accordion);
+            }
     </script>
+
+<script src="fslightbox.js"></script>
+
 </body>
 </html>
